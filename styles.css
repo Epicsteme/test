@@ -1,0 +1,360 @@
+.htmlscroll {
+    overflow-y: scroll;
+    background-color: rgb(246, 243, 240);
+    scroll-behavior: smooth
+}
+
+.allcontainers {
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    width: inherit;
+    margin: auto
+}
+
+.topnavparent {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 806px;
+    height: 48px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5)
+}
+
+.topnavcol {
+    position: relative;
+    margin: auto;
+    width: 25%;
+    height: 100%;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none
+}
+
+.topnavcol:hover {
+    background-color: rgb(226, 223, 220);
+}
+
+.topnavtext {
+    font-family: calibri;
+    font-size: 18px;
+    margin: 12px;
+    line-height: 1em;
+    color: rgb(0, 0, 0);
+}
+
+.hrpagename {
+    width: 806px;
+    color: rgb(0, 0, 0);
+}
+
+.hidelinkdecor {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 900
+}
+
+.maincontent {
+    z-index: -2;
+    position: relative;
+    overflow-x: visible;
+    margin-top: 18px;
+    margin-bottom: 0;
+    margin: auto;
+    padding-top: 0;
+    padding-bottom: 50px;
+    width: 806px;
+    height: auto
+}
+
+.bottomindexparent {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 806px;
+    height: 48px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+}
+
+.bottomindexcol {
+    position: relative;
+    margin: auto;
+    width: 25%;
+    height: 100%;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+}
+
+.bottomindexcol:hover {
+    background-color: rgb(226, 223, 220);
+}
+
+.bottomindex {
+    font-family: calibri;
+    font-size: 18px;
+    margin: 12px;
+    line-height: 1em;
+    color: rgb(0, 0, 0);
+}
+
+@keyframes loading-fade-inout {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.loadfade {
+    animation: loading-fade-inout .75s infinite alternate;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 1em;
+    margin-bottom: 0
+}
+
+.homejk {
+    width: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+    animation: 10s fadeIn;
+    animation-fill-mode: forwards;
+    text-align: center;
+    font-size: 24px
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    70% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.hrlogsplit {
+    width: auto
+}
+
+.gametiles {
+    position: relative;
+    float: none;
+    margin: auto;
+    width: 100%;
+    height: 240px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+    z-index: 0;
+    border-radius: 6px
+}
+
+.gametilecard {
+    position: relative;
+    float: none;
+    margin: auto;
+    width: 32%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    background-color: none;
+    z-index: 0;
+    border-radius: 6px;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-left: 1%
+}
+
+.gametilecard:hover {
+    background-color:rgb(226, 223, 220);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    padding-bottom: 5px
+}
+
+.gametilehead {
+    position: relative;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px
+}
+
+.devlogcontainer {
+    position: relative;
+    width: 806px;
+    margin: auto
+}
+
+.tilegamerow1 {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 6px
+}
+
+.tilegameimg {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 6px
+}
+
+.quicknavgames {
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+    left: 1em;
+    top: auto 0;
+    bottom: auto 0;
+    width: 150px;
+    height: 100%;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    left: -134px;
+    transition: left .25s;
+    animation: quicknavgamesanim 1s 1
+}
+
+@keyframes quicknavgamesanim {
+    0% {
+        left: 0
+    }
+
+    70% {
+        left: 0
+    }
+
+    100% {
+        left: -134px
+    }
+}
+
+.quicknavgames:hover {
+    left: 0;
+    animation-iteration-count: 0
+}
+
+.quicknavgamestile {
+    position: relative;
+    height: 36px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+    background-color: rgb(255, 255, 255);
+
+    font-style: normal;
+}
+
+.quicknavgamestile:hover {
+    background-color: rgb(246, 243, 240);
+}
+
+.quicknavgamestile-active {
+    position: relative;
+    height: 36px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+    background-color: rgb(226, 223, 220);
+    
+    font-style: bold;
+}
+
+.quicknavgamestile-active:hover {
+    background-color: rgb(216, 213, 210);
+}
+
+.quicknavgamestext {
+    position: relative;
+    margin-left: 25px;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-style: inherit;
+}
+
+.gamecoverimg {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0;
+    border-radius: 6px
+}
+
+.chapterhead {
+    position: relative;
+    top: 18px;
+    text-align: left;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.gamedevlog {
+    position: relative;
+    left: 0;
+    text-align: justify;
+    font-size: 18px;
+    font-family: calibri
+}
+
+.playthisgame {
+    width: fit-content;
+    margin: auto;
+    text-decoration: none;
+    color: #000
+}
+
+.playthisgametext:hover {
+    background-color: #e2dfdc
+}
+
+.playthisgamebutton {
+    width: fit-content;
+    background-color: rgba(226, 223, 220, 50);
+    text-decoration: none;
+    color: #000
+}
+
+.playthisgametext {
+    background-color: transparent;
+    width: fit-content;
+    margin: auto;
+    margin-top: 12px;
+    padding: 12px;
+    text-align: center;
+    font-family: calibri;
+    font-size: 16px;
+    border-radius: 6px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5)
+}

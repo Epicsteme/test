@@ -1,2 +1,2 @@
 # epicsteme.github.io
-This is a personal blog type thing. 
+This is my personal blog type thing. 

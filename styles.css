@@ -1,3 +1,4 @@
+/*#region common*/
 .htmlscroll {
     overflow-y: scroll;
     background-color: rgb(246, 243, 240);
@@ -13,42 +14,6 @@
     right: 0;
     width: inherit;
     margin: auto
-}
-
-.topnavparent {
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    width: 806px;
-    height: 48px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 4px rgba(0, 0, 0, .5)
-}
-
-.topnavcol {
-    position: relative;
-    margin: auto;
-    width: 25%;
-    height: 100%;
-    background-color: transparent;
-    text-align: center;
-    text-decoration: none
-}
-
-.topnavcol:hover {
-    background-color: rgb(226, 223, 220);
-}
-
-.topnavtext {
-    font-family: calibri;
-    font-size: 18px;
-    margin: 12px;
-    line-height: 1em;
-    color: rgb(0, 0, 0);
 }
 
 .hrpagename {
@@ -80,42 +45,6 @@
     height: auto
 }
 
-.bottomindexparent {
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    width: 806px;
-    height: 48px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
-}
-
-.bottomindexcol {
-    position: relative;
-    margin: auto;
-    width: 25%;
-    height: 100%;
-    background-color: transparent;
-    text-align: center;
-    text-decoration: none;
-}
-
-.bottomindexcol:hover {
-    background-color: rgb(226, 223, 220);
-}
-
-.bottomindex {
-    font-family: calibri;
-    font-size: 18px;
-    margin: 12px;
-    line-height: 1em;
-    color: rgb(0, 0, 0);
-}
-
 @keyframes loading-fade-inout {
     0% {
         opacity: 1
@@ -126,6 +55,9 @@
     }
 }
 
+/*#endregion common*/
+
+/*#region home*/
 .loadfade {
     animation: loading-fade-inout .75s infinite alternate;
     text-align: center;
@@ -144,6 +76,8 @@
     font-size: 24px
 }
 
+/*#endregion home*/
+
 @keyframes fadeIn {
     0% {
         opacity: 0
@@ -158,6 +92,9 @@
     }
 }
 
+
+
+/*#region gamedev*/
 .hrlogsplit {
     width: auto
 }
@@ -193,7 +130,7 @@
 }
 
 .gametilecard:hover {
-    background-color:rgb(226, 223, 220);
+    background-color: rgb(226, 223, 220);
     box-shadow: 0 0 4px rgba(0, 0, 0, .5);
     padding-bottom: 5px
 }
@@ -237,9 +174,18 @@
     border-bottom-right-radius: 6px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    left: 0;
+}
+
+.quicknavgamesanim {
     left: -134px;
-    transition: left .25s;
-    animation: quicknavgamesanim 1s 1
+    transition: left .15s;
+    animation: quicknavgamesanim .3s 1
+}
+
+.quicknavgames:hover {
+    left: 0;
+    animation-iteration-count: 0
 }
 
 @keyframes quicknavgamesanim {
@@ -247,18 +193,13 @@
         left: 0
     }
 
-    70% {
+    50% {
         left: 0
     }
 
     100% {
         left: -134px
     }
-}
-
-.quicknavgames:hover {
-    left: 0;
-    animation-iteration-count: 0
 }
 
 .quicknavgamestile {
@@ -285,7 +226,7 @@
     margin-bottom: 0;
     vertical-align: middle;
     background-color: rgb(226, 223, 220);
-    
+
     font-style: bold;
 }
 
@@ -358,3 +299,5 @@
     border-radius: 6px;
     box-shadow: 0 0 4px rgba(0, 0, 0, .5)
 }
+
+/*#endregion gamedev*/

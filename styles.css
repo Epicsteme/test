@@ -225,13 +225,13 @@
     margin-top: 0;
     margin-bottom: 0;
     vertical-align: middle;
-    background-color: rgb(226, 223, 220);
+    background-color: rgb(255, 183, 197);
 
-    font-style: bold;
+    /*background-color: rgb(80, 200, 120);*/
 }
 
 .quicknavgamestile-active:hover {
-    background-color: rgb(216, 213, 210);
+    background-color: rgb(249, 171, 182);
 }
 
 .quicknavgamestext {
@@ -241,8 +241,6 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     top: 50%;
     transform: translateY(-50%);
-
-    font-style: inherit;
 }
 
 .gamecoverimg {

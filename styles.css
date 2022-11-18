@@ -96,18 +96,6 @@
 
 /*#region gamedev*/
 
-@media only screen and (max-width: 900px) {
-    .quicknavgamestile {
-        background-color: aqua;
-        font-size: calc(.5vw + 1rem);
-    }
-
-    .gamedevlog {
-        font-size: calc(5vw + 1rem);
-        font-style: italics;
-    }
-}
-
 .hrlogsplit {
     width: auto
 }
@@ -228,7 +216,7 @@
 }
 
 .quicknavgamestile:hover {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(246, 243, 240);
 }
 
 .quicknavgamestile-active {

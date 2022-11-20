@@ -62,7 +62,7 @@
 
 details > summary {
     cursor: pointer;
-    /*list-style: none;*/
+    list-style: none;
 }
 
 

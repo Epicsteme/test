@@ -163,8 +163,9 @@
 }
 
 .quicknavgames {
+    
     position: fixed;
-    overflow: hidden;
+    
     z-index: 1;
     left: 1em;
     top: auto 0;
@@ -176,6 +177,10 @@
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 4px rgba(0, 0, 0, .5);
     left: 0;
+}
+
+.quicknavindex{
+    overflow-y: auto;
 }
 
 .quicknavgamesanim {

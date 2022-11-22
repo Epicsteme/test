@@ -199,17 +199,18 @@ details>summary {
 }
 
 .navhandle {
-    position: fixed;
-    z-index: 0;
+    position: absolute;
 
-    left: 30px;
-    top: -4px;
+    z-index: 2;
+    
+    right: 0;
+    left: auto;
+    top: auto 0;
     bottom: auto 0;
 
-    width: 50px;
-    height: 50px;
+    width: 36px;
+    height: 36px;
 
-    border-radius: 6px;
     
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 4px rgba(0, 0, 0, .5);

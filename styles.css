@@ -57,7 +57,7 @@
 }
 
 
-details > summary {
+details>summary {
     cursor: pointer;
     list-style: none;
 }
@@ -172,18 +172,19 @@ details > summary {
 .quicknavgames {
 
     position: fixed;
-
     z-index: 1;
-    left: 1em;
+
+    left: 0;
     top: auto 0;
     bottom: auto 0;
     width: 200px;
     height: 100%;
+
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
     background-color: rgb(255, 255, 255);
+
     box-shadow: 0 0 4px rgba(0, 0, 0, .5);
-    left: 0;
 }
 
 .quicknavgamesanim {
@@ -195,6 +196,28 @@ details > summary {
 .quicknavgames:hover {
     left: 0;
     animation-iteration-count: 0
+}
+
+.navhandle {
+    position: fixed;
+    z-index: 0;
+
+    left: 30px;
+    top: -4px;
+    bottom: auto 0;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 6px;
+    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+}
+
+.navhandleimg{
+     height: 100%;
+     width: 100%;
 }
 
 @keyframes quicknavgamesanim {

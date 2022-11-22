@@ -56,17 +56,6 @@
     }
 }
 
-
-
-
-
-details > summary {
-    cursor: pointer;
-    list-style: none;
-}
-
-
-
 /*#endregion common*/
 
 /*#region home*/
@@ -106,6 +95,18 @@ details > summary {
 }
 
 /*#region gamedev*/
+
+@media only screen and (max-width: 900px) {
+    .quicknavgamestile {
+        background-color: aqua;
+        font-size: calc(.5vw + 1rem);
+    }
+
+    .gamedevlog {
+        font-size: calc(5vw + 1rem);
+        font-style: italics;
+    }
+}
 
 .hrlogsplit {
     width: auto
@@ -174,9 +175,8 @@ details > summary {
 }
 
 .quicknavgames {
-
     position: fixed;
-
+    overflow: hidden;
     z-index: 1;
     left: 1em;
     top: auto 0;
@@ -228,7 +228,7 @@ details > summary {
 }
 
 .quicknavgamestile:hover {
-    background-color: rgb(246, 243, 240);
+    background-color: rgb(240, 240, 240);
 }
 
 .quicknavgamestile-active {

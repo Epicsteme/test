@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="htmlscroll">
+
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery.js"></script>
+
+    <link rel="stylesheet" href="slidey-master/slidey.css">
+    <script src="slidey-master/slidey.js"></script>
+
+    <link rel="stylesheet" href="hoverslider.css">
+
+
+    <script>
+        $(function () {
+            $('#slidey').load('slidey-master/slidey.html')
+        }
+        )
+    </script>
+
+    <title>
+        Epicsteme - Home
+    </title>
+
+</head>
+
+<body>
+
+    <div class="allcontainers">
+
+        <div id="circularMenu1" class="circular-menu circular-menu-left active">
+
+            <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <menu class="items-wrapper">
+                <a href="index.html" class="menu-item fa fa-home"></a>
+                <a href="gamedev.html" class="menu-item fa fa-user"></a>
+                <a href="art.html" class="menu-item fa fa-pie-chart"></a>
+                <a href="scribble.html" class="menu-item fa fa-cog"></a>
+            </menu>
+
+        </div>
+
+        <div class="maincontent">
+
+            <div>
+                <h1 style="text-align: center;">
+                    Welcome
+                </h1>
+            </div>
+
+            <hr>
+
+            <p style="text-align: center">
+                Hello, fellow living and breathing creature.
+                <br>
+                I too am a living and breathing creature.
+                <br>
+                Why do you ask?
+                beep boop..
+            </p>
+
+
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>

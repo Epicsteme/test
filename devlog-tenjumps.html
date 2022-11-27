@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="htmlscroll">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="jquery.js"></script>
+
+    <script>
+        $(function () {
+            $('#navheader').load('navheader.html')
+        }
+        )
+    </script>
+
+    <script>
+        $(function () {
+            $('#navfooter').load('navfooter.html')
+        }
+        )
+    </script>
+
+    <title>
+        Ten Jumps
+    </title>
+</head>
+
+<body>
+
+    <div class="allcontainers">
+
+        <div class="navbar">
+
+            <div class="navbar_child1">
+                <a class="navbuttons" href="index.html">Aditya</a>
+            </div>
+
+            <div class="navbar_child2">
+                <a class="navbuttons" href="index.html">Home</a>
+                <a class="navbuttons" href="gamedev.html">Game Dev</a>
+                <a class="navbuttons" href="art.html">Art</a>
+                <a class="navbuttons" href="scribble.html">Scribble</a>
+            </div>
+
+        </div>
+
+        <div class="maincontent">
+            <div class="gametitle">
+                <p>Ten Jumps</p>
+            </div>
+
+            <hr width="806px">
+
+            <div>
+                <img class="gamecoverimg" src="img/ten-jumps-cover-tile.jpg">
+            </div>
+
+            <div>
+                <p class="chapterhead">Introduction</p>
+
+                <hr width="806px">
+
+                <p class="gamedevlog">
+                    This game was made for The Fresh Game Jam 2021. I chose to make a platformer as I was looking to improve my skill in designing levels for
+                    platformers.
+
+                    I was inspired by a fancy little indie platformer called
+                    Un-Evergreen by Motor in which you have a limited
+                    number of jumps.
+
+                    I applied the concept of limited jumps to fit the theme "management" (you have to manage your jumps)
+                    and worked on improving my level designing skill.
+
+                </p>
+
+                <p class="chapterhead">Level Design</p>
+
+                <hr width="806px">
+
+                <p class="gamedevlog">
+                    Designing the level for this game was tricky since the player has a limited number of jumps to use.
+                    Among other things, this restriction forced me to come up with the pink platforms that gave a free
+                    instant jump for the player character, adding variety to the gameplay as well as the level.
+
+                    I created multiple scripts, each with a specific mechanic or behaviour, allowing me to quickly apply
+                    any script to any platform that I thought needed that mechanic or combination of mechanics.
+                </p>
+
+                <p class="chapterhead">Hints</p>
+
+                <hr width="806px">
+
+                <p class="gamedevlog">
+                    The banners on the wall are hints that convey to the player where they needed to use a jump. I set
+                    the hints to be invisible by default and added the ability to make them visible on a key press so
+                    that the players can choose whether they want the hints, adding a bit of control over the difficulty
+                    of the game.
+                </p>
+
+                <p class="chapterhead">Art</p>
+
+                <hr width="806px">
+
+                <p class="gamedevlog">
+                    In order to improve my skill in creating sprites, I made my own art for most parts of the game
+                    using LibreSprite.
+
+                    The brick sprite is reused for the platforms as well as the background, with slight change to the
+                    colour to differentiate one from the other.
+                </p>
+
+                <p class="chapterhead">Accessibility</p>
+
+                <hr width="806px">
+
+                <p class="gamedevlog">
+                    Royalty free font "OpenDyslexic" was used in order to facilitate better experience to players with dyslexia.
+                </p>
+
+            </div>
+
+
+        </div>
+
+        <div class="quicknav">
+
+            <div class="opengamespage">
+                <a class="opengamespage" href="https://pikonparadox.itch.io/ten-jumps">Play Ten Jumps</a>
+            </div>
+
+            <div class="backtotop">
+                <a class="backtotop" href="#top">Back to top</a>
+            </div>
+        </div>
+
+        <!--<div id="navfooter"> </div>-->
+
+        <div class="bottomindexparent">
+
+            <div class="bottomindexcol">
+                <p> <a class="navbuttons" href="index.html">Home</a> </p>
+            </div>
+
+
+            <div class="bottomindexcol">
+                <p> <a class="navbuttons" href="gamedev.html">Game Dev</a> </p>
+            </div>
+
+            <div class="bottomindexcol">
+                <p> <a class="navbuttons" href="art.html">Art</a> </p>
+            </div>
+
+            <div class="bottomindexcol">
+                <p> <a class="navbuttons" href="scribble.html">Scribble</a> </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

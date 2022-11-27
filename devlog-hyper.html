@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="htmlscroll">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="jquery.js"></script>
+
+    <script>
+        $(function () {
+            $('#navheader').load('navheader.html')
+        }
+        )
+    </script>
+
+    <script>
+        $(function () {
+            $('#navfooter').load('navfooter.html')
+        }
+        )
+    </script>
+
+    <title>
+        Hyper
+    </title>
+</head>
+
+<body>
+
+    <div class="allcontainers">
+
+        <!--<div class="navbar">-->
+        <div class="navbar">
+            <div class="navbar_child1">
+                <a class="navbuttons" href="index.html">Epicsteme</a>
+            </div>
+
+            <div class="navbar_child2">
+                <a class="navbuttons" href="index.html">Home</a>
+                <a class="navbuttons" href="gamedev.html">Game Dev</a>
+                <a class="navbuttons" href="art.html">Art</a>
+                <a class="navbuttons" href="scribble.html">Scribble</a>
+            </div>
+        </div>
+
+        <div class="maincontent">
+            <div class="gametitle">
+                <p>Hyper</p>
+            </div>
+
+            <hr width="806px">
+
+            <div>
+                <img class="gamecoverimg" src="img/hyper-cover-gif.gif">
+            </div>
+
+            <div>
+                <p class="chapterhead">Introduction</p>
+
+                <hr width="806px">
+
+                <p class="gamedevlog">
+                    It was the first time that I completed a project. By the time this project began, I was already
+                    familiar with some of the basics of game design and development. So, I decided to make something
+                    similar to an existing game and tweak the design a little bit to allow me to improve my game
+                    designing skills while also learning to develop a game. I chose Space Invaders as it seemed
+                    relatively easier for me to execute and complete the project at the time.
+                </p>
+
+                <p class="chapterhead">Shortcuts & Efficiency</p>
+
+                <hr width="806px">
+
+                <p class="gamedevlog">
+                    On one hand, not all the scripts are as good as they could have been in maintaining a lighter CPU
+                    workload. On the other hand, I took a few shortcuts with some parts of the development, without
+                    affecting the gameplay, to save time, and reduce the work load on the computer and on myself. For
+                    instance, the NPC ships circling the player character are attached to one empty parent object in the
+                    center which is scripted to rotate on its own axis. This helps in avoiding having multiple movement
+                    scripts in the scene while still achieving the same gameplay experience.
+                </p>
+
+                <p class="chapterhead">Dynamic Difficulty</p>
+
+                <hr width="806px">
+
+                <p class="gamedevlog">
+                    The NPC fire rate varies between a fixed range based on the Player's Health State: higher the player
+                    health, higher the fire rate.
+                    The NPC rotation speed increases whenever the player hits an NPC rather than increasing over time.
+                    These mechanics synchronise the game's difficulty level with the player's skill level to some
+                    extent.
+                </p>
+
+                <p class="chapterhead">Accessibility</p>
+
+                <hr width="806px">
+
+                <p class="gamedevlog">
+                    Royalty free font "OpenDyslexic" was used in order to facilitate better experience to players with
+                    dyslexia.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="quicknav">
+
+            <div class="opengamespage">
+                <a class="opengamespage" href="https://pikonparadox.itch.io/hyper">Play Hyper</a>
+            </div>
+
+            <div class="backtotop">
+                <a class="backtotop" href="#top">Back to top</a>
+            </div>
+        </div>
+
+        <!--<div id="navfooter"> </div>-->
+        <div class="bottomindexparent">
+
+            <div class="bottomindexcol">
+                <p> <a class="navbuttons" href="index.html">Home</a> </p>
+            </div>
+
+
+            <div class="bottomindexcol">
+                <p> <a class="navbuttons" href="gamedev.html">Game Dev</a> </p>
+            </div>
+
+            <div class="bottomindexcol">
+                <p> <a class="navbuttons" href="art.html">Art</a> </p>
+            </div>
+
+            <div class="bottomindexcol">
+                <p> <a class="navbuttons" href="scribble.html">Scribble</a> </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

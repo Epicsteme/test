@@ -1,0 +1,138 @@
+/*
+ * Slidey 0.2
+ *
+ * Author: Gautham Yerroju
+ * GitHub: https://github.com/GauthamYerroju/Slidey
+ */
+
+/* Styling for the drawer */
+#slidey {
+    box-sizing: border-box;
+
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+    width: 12em;
+    /*  Height more than 100% meeded because at 100%,
+        Chrome on Android doesn't render full height
+        when hiding the address bar */
+    height: 150%;
+    overflow-y: hidden;
+
+    transition: left 0.2s ease, right 0.2s ease;
+}
+
+/* Hidden state styling for left and right variants */
+#slidey.slidey--left {
+    left: -12em;
+    box-shadow: 0;
+}
+
+
+/* Open state styling for left and right variants */
+#slidey.slidey--left.slidey--open {
+    left: 0;
+}
+
+
+/* Styling for the switch */
+#slidey__toggle {
+    position: fixed;
+    top: 0em;
+    left: 0em;
+
+    width: 2em;
+    height: 2em;
+
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+
+    /* Cosmetic Stuff */
+    background-color: rgba(0, 0, 0, .5);
+    background-image: url('slidey-toggle.png');
+    background-repeat: no-repeat;
+    background-position: left;
+
+}
+
+/* Hidden state styling for left and right variants */
+#slidey.slidey--left>#slidey__toggle {
+    left: 0em;
+}
+
+
+/* Open state styling for left and right variants */
+#slidey.slidey--left.slidey--open>#slidey__toggle {
+    left: 0em;
+}
+
+/* Close button 
+#slidey__close {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+
+    width: 1em;
+    height: 1em;
+
+    /* Cosmetic Stuff 
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("slidey-master/slidey__close.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}*/
+
+/* Basic Styling, use .slidey--styled to turn on */
+
+#slidey.slidey--styled {
+    /* Basic Styling */
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+
+    color: gray;
+    text-decoration: none;
+}
+
+#slidey.slidey--styled a {
+    display: block;
+    padding: 5px 1em;
+
+    top: 0em;
+
+    text-decoration: inherit;
+    color: inherit;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    transition: color 0.1s ease, background-color 0.1s ease;
+
+    text-indent: 1.6em;
+}
+#slidey.slidey--styled a:active {
+    color: black;
+}
+#slidey.slidey--styled a:not(.slidey__brand):hover {
+    background-color: #DDD;
+    color: black;
+}
+
+#slidey.slidey--styled .slidey__brand {
+    display: block;
+    padding: 1.5px;
+
+    margin-top: 0px;
+    
+    text-align: center;
+
+    font-size: 1.5em;
+    font-weight: bold;
+    text-indent: 0;
+
+    background-color: whitesmoke;
+}

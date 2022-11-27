@@ -1,7 +1,7 @@
 /*#region common*/
 
 .htmlscroll {
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
     background-color: rgb(246, 243, 240);
     scroll-behavior: smooth
 }
@@ -147,7 +147,7 @@ details>summary {
     position: relative;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px
+    font-size: 18px;
 }
 
 .devlogcontainer {
@@ -188,7 +188,7 @@ details>summary {
 }
 
 .quicknavgamesanim {
-    left: -165px;
+    left: -200px; /*165*/
     transition: left .15s;
     animation: quicknavgamesanim .3s 1
 }
@@ -203,14 +203,10 @@ details>summary {
 
     z-index: 2;
     
-    right: 0;
-    left: auto;
-    top: auto 0;
-    bottom: auto 0;
+    right: -50px;
 
-    width: 36px;
-    height: 36px;
-
+    width: 50px;
+    height: 50px;
     
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 4px rgba(0, 0, 0, .5);
@@ -296,7 +292,7 @@ details>summary {
     position: relative;
     left: 0;
     text-align: justify;
-    font-size: 18px;
+    font-size: 20px;
     font-family: calibri;
     font-style: normal;
 }

@@ -1,71 +1,212 @@
 <!DOCTYPE html>
+<html lang="en">
 <html class="htmlscroll">
 
-
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <script src="jquery.js"></script>
+    <!--<link rel="stylesheet" href="styles.css">-->
 
-    <link rel="stylesheet" href="slidey-master/slidey.css">
-    <script src="slidey-master/slidey.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="hoverslider.css">
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
 
-
-    <script>
-        $(function () {
-            $('#slidey').load('slidey-master/slidey.html')
-        }
-        )
-    </script>
 
     <title>
-        Epicsteme - Home
+        Epicsteme
     </title>
 
 </head>
 
 <body>
 
-    <div class="allcontainers">
+    <div class="container-lg">
 
-        <div id="circularMenu1" class="circular-menu circular-menu-left active">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
 
-            <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
-                <i class="fa fa-bars"></i>
-            </a>
+                <a href="#" class="navbar-brand">
+                    <h1 class="text-start">
+                        Epicsteme
+                    </h1>
+                </a>
 
-            <menu class="items-wrapper">
-                <a href="index.html" class="menu-item fa fa-home"></a>
-                <a href="gamedev.html" class="menu-item fa fa-user"></a>
-                <a href="art.html" class="menu-item fa fa-pie-chart"></a>
-                <a href="scribble.html" class="menu-item fa fa-cog"></a>
-            </menu>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse bg-white" id="toggleMobileMenu">
+                    <ul CLASS="navbar-nav ms-auto text-start">
+                        <li>
+                            <a class="nav-link" href="index.html"> Home </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="art.html"> Art </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="gamedev.html"> Game Dev </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="photography.html"> Photography </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="creative-writing.html"> Creative Writing </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
 
         </div>
 
-        <div class="maincontent">
-
+        <!--intro
             <div>
-                <h1 style="text-align: center;">
-                    Welcome
-                </h1>
+                <p class="gamedevlog">
+                    I hold a Master's degree in English, Bachelor's degree in Education and in Journalism.
+                    I am currently pursuing Master's degree in Applied Psychology. I am interested in a wide range of
+                    fields such as philosophy, visual arts, geography, microbiology. I like
+                    to spend my time creating and appreciating art, and laughing at my own jokes.
+                </p>
+
             </div>
+        -->
+
+        <hr class="m-0">
+
+        <p class="text-center mt-3">
+            Featured Posts
+        </p>
+
+        <div class="row justify-content-center">
+
+            <a class="col-sm-4 co-lg-3" href="gamedev.html#idtenjumpsdiv">
+                <div class="p-5 bg-primary text-light">col 1</div>
+            </a>
+
+            <a class="col-sm-4 co-lg-3" href="gamedev.html#idtenjumpsdiv">
+                <div class="p-5 bg-primary text-light">col 2</div>
+            </a>
+
+            <a class="col-sm-4 co-lg-3" href="gamedev.html#idtenjumpsdiv">
+                <div class="p-5 bg-primary text-light">col 3</div>
+            </a>
+
+        </div>
+
+        <hr>
+
+        <!--<details>-->
+        <summary class=""><u>What is Epicsteme?</u></summary>
+        <div>
+
+            <p class="gamedevlog">
+                <b>Epicsteme</b> (n.) "the deeds of a person whose
+                knowledge extends beyond the usual or ordinary," 2022, coined by Aditya from <i>epic +
+                    episteme.</i>
+            </p>
 
             <hr>
 
-            <p style="text-align: center">
-                Hello, fellow living and breathing creature.
-                <br>
-                I too am a living and breathing creature.
-                <br>
-                Why do you ask?
-                beep boop..
+            <p class="gamedevlog">
+                <b>Epic</b> (n.) a long narrative poem in elevated style recounting the deeds of a legendary or
+                historical
+                hero;
+                a work of art (such as a novel or drama) that resembles or suggests an epic.
             </p>
 
+            <p class="gamedevlog">
+                <b>Epic</b> (adj.) extending beyond the usual or ordinary especially in size or scope.
+            </p>
+
+            <p class="gamedevlog">
+                <b>Epic</b> (adj.)
+
+                1580s, "pertaining to or constituting a lengthy heroic poem," via French épique or directly from
+                Latin epicus, from Greek epikos, from epos "a word; a tale, story; promise, prophecy, proverb;
+                poetry in heroic verse" (from Proot-Indo-European root *wekw- "to speak").
+            </p>
+
+            <hr>
+
+            <p class="gamedevlog">
+                <b>Episteme</b> (n.)
+                knowledge. Specifically : intellectually certain knowledge.
+            </p>
+
+            <p class="gamedevlog">
+                Greek <b><i>epistēmē</i></b> understanding, knowledge, from feminine of <i>epistēmōn</i>
+                understanding,
+                knowing, from
+                <i>epistanai</i> to understand, know, from <i>epi- + histanai</i> to set, place.
+            </p>
+
+            <hr>
+
+            <p class="gamedevlog">
+                <b>Epistemology</b> (n.) the study or a theory of the nature and grounds of knowledge especially
+                with
+                reference to its limits and validity.
+                <br>
+                <br>
+                <b>Epistemology</b> (n.)
+                "theory of knowledge," 1856, coined by Scottish philosopher James F. Ferrier (1808-1864) from
+                Greek
+                <i>episteme</i> "knowledge, acquaintance with (something), skill, experience," from Ionic Greek
+                <i>epistasthai</i>
+                "know how to do, understand," literally "overstand," from <i>epi</i> "over, near" (see epi-)
+                +<i>
+                    histasthai</i>
+                "to stand," from Proto-Indo-European root *sta- "to stand, make or be firm." The scientific (as
+                opposed to
+                philosophical) study of the roots and paths of knowledge is <i>epistemics</i> (1969).
+            </p>
+
+            <hr>
+
+            <p class="gamedevlog">
+                <b><i>Doxa</i></b> "opinion", from <i>dokein</i> "to appear, seem, think"
+                <br>
+                (from Proto-Indo-European root *dek- "to take, accept").
+            </p>
+
+            <hr>
+
+            <p>
+                <b>Bibliography</b>
+                <br>
+                <br>
+                Merriam-Webster. (n.d.). Epic. In Merriam-Webster.com dictionary. Retrieved November 18,
+                2022, from
+                <br>
+                https://www.merriam-webster.com/dictionary/epic
+                <br><br>
+                Merriam-Webster. (n.d.). Episteme. In Merriam-Webster.com dictionary. Retrieved November 18,
+                2022, from
+                <br>
+                https://www.merriam-webster.com/dictionary/episteme
+                <br><br>
+                Etymonline. (n.d.). Epic. In etymonline.com. Retrieved November 18, 2022, from
+                <br>
+                https://www.etymonline.com/word/epic#etymonline_v_8778
+                <br><br>
+                Etymonline. (n.d.). Epistemology. In etymonline.com. Retrieved November 18, 2022, from
+                <br>
+                https://www.etymonline.com/word/epistemology#etymonline_v_8792
+                <br><br>
+                Etymonline. (n.d.). Paradox. In etymonline.com. Retrieved November 18, 2022, from
+                <br>
+                https://www.etymonline.com/word/paradox#etymonline_v_7169
+                <br><br>
+                Etymonline. (n.d.). Dek. In etymonline.com. Retrieved November 18, 2022, from
+                <br>
+                https://www.etymonline.com/word/*dek-#etymonline_v_52717
+            </p>
 
         </div>
-
+        </details>
     </div>
 
     </div>

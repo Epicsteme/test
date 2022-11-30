@@ -1,9 +1,12 @@
-$('.panel-collapse').on('shown.bs.collapse', function (e) {
-    e.preventDefault();
-    e.stopPropagation();
+const accordionItems = document.querySelectorAll('.accordion-collapse')
 
-    var $panel = $(this).closest('.panel');
-    $('html,body').animate({
-        scrollTop: $panel.offset().top
-    }, 500);
-});
+accordionItems.forEach((el)=>{
+    el.addEventListener('shown.bs.collapse',(e)=>{
+        let accordionItem = el.closest('.accordion-item');
+        window.scrollTo({
+            top: accordionItem.offsetTop - 74,
+            left: 0,
+            behavior: 'smooth'
+        });
+    })
+})

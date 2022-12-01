@@ -28,6 +28,7 @@
 
 }
 
-.readingcol{
-    width: 70ch;
+.overflow-x{
+    overflow-x: scroll;
+    white-space: nowrap;
 }

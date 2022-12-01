@@ -1,7 +1,6 @@
 :root {
     /*--bs-body-bg: #fffef7; /*grace bruxner yellow*/
-    --bs-body-bg: #f5f5f7;
-    /*apple grey*/
+    --bs-body-bg: #f5f5f7; /*apple grey*/
 }
 
 .accordion {
@@ -9,11 +8,16 @@
     --bs-accordion-btn-icon-transition: transform .15s ease-in-out;
     --bs-accordion-btn-focus-box-shadow: none;
 
-    --bs-accordion-border-color: grey;
     --bs-accordion-active-bg: none;
     --bs-accordion-bg: none;
 }
 
 .accordion-item {
-    background-color: var(--bs-bg-color);
+    color: var(--bs-accordion-color);
+    background-color: var(--bs-accordion-bg);
+    border: var(--bs-accordion-border-width) solid lightgray;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
 }

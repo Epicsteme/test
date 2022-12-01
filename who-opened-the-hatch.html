@@ -63,7 +63,7 @@
         <div class="container-fluid">
 
             <div class="container-fluid">
-                <h1 class="display-4 text-center"> Who Opened The Hatch </h1>
+                <h1 class="display-6 text-center"> Who Opened The Hatch? </h1>
             </div>
 
             <div class="container-fluid">
@@ -490,10 +490,8 @@
 
                 <p class="gamedevlog">
                     In order to improve the visual attractiveness, I have added trails behind player's ship.
-                    Realistically,
-                    it is not possible that such trails would exist in space where there is no atmosphere. However, the
-                    need
-                    for player's enjoyment outweighs the need for realism.
+                    Realistically, it is not possible that such trails would exist in space where there is no
+                    atmosphere. However, the need for player's enjoyment outweighs the need for realism.
                 </p>
 
                 <br>
@@ -507,9 +505,8 @@
 
                 <p>
                     Asset reuse is crucial to save time and energy. This above asset was used as the filler for the
-                    oxygen
-                    tank, background for the buttons in menu screens, and a few other places in order to make them fit
-                    better with the chosen art style.
+                    oxygen tank, background for the buttons in menu screens, and a few other places in order to make
+                    them fit better with the chosen art style.
                 </p>
 
                 <br>
@@ -522,10 +519,9 @@
                 <br>
 
                 <p>
-                    I've written a script that chooses a random colour for the heart each time an NPC was rescued. While
-                    this felt quite refreshing and exciting, it also strayed from the rest of the art style. For the
-                    sake of
-                    the greater good, I have decided to leave the heart in its original colour.
+                    I've written a script that chose a random colour for the heart each time an NPC was rescued. Though
+                    this felt refreshing and exciting, it also strayed from the rest of the art style. For the
+                    sake of the greater good, I have decided to leave the heart in its original colour.
                 </p>
 
                 <br>
@@ -553,8 +549,7 @@
 
                 <p>
                     The camera shake is an obvious element at this point in my game dev journey. The shake upon
-                    explosion
-                    increases the intensity of the collision and also the players' immersion in the game.
+                    explosion increases the intensity of the collision and also the players' immersion in the game.
                 </p>
 
                 <br>
@@ -574,21 +569,16 @@
                     component in Unity when I found that some of the values were not in their default state.
                     <br><br>
                     The game would stop responding upon starting the level but not when I start from the settings menu.
-                    I
-                    narrowed down the possibilities to audio script which remains across scenes. I've tried changing the
-                    code for how background music gets called upon scene transition, but it did not fix the problem. I
-                    then
-                    found that I was setting the volume of level's background music after loading the level by taking
-                    the
-                    value of the volume slider instead of the slider's value which is saved in a variable. I fixed this
-                    by
-                    removing the reference to the slider which does not exist anywhere outside settings menu and
-                    replacing
-                    it with a reference to the variable that keeps a copy of the value set by the volume slider.
+                    I narrowed down the possibilities to audio script which remains across scenes. I've tried changing
+                    the code for how background music gets called upon scene transition, but it did not fix the problem.
+                    I then found that I was setting the volume of level's background music after loading the level by
+                    taking the value of the volume slider instead of the slider's value which is saved in a variable. I
+                    fixed this by removing the reference to the slider which does not exist anywhere outside settings
+                    menu and replacing it with a reference to the variable that keeps a copy of the value set by the
+                    volume slider.
                     <br><br>
                     In one of the playtests, I found the audio being delayed in the game build but working as expected
-                    in
-                    the engine's editor. I fixed this delay by using wired earphones instead of bluetooth earphones.
+                    in the engine's editor. I fixed this delay by using wired earphones instead of bluetooth earphones.
                 </p>
 
                 <br>

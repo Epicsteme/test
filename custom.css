@@ -21,3 +21,9 @@
 .accordion-button:not(.collapsed) {
     box-shadow: none;
 }
+
+.navbar {
+    --bs-navbar-toggler-border-color: none;
+    --bs-navbar-toggler-focus-width: none;
+    
+  }

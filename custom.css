@@ -1,6 +1,6 @@
 :root {
     /*--bs-body-bg: #fffef7; */
-    --bs-body-bg: #f5f5f7; 
+    --bs-body-bg: #f5f5f7;
 }
 
 .accordion {
@@ -25,5 +25,9 @@
 .navbar {
     --bs-navbar-toggler-border-color: none;
     --bs-navbar-toggler-focus-width: none;
-    
-  }
+
+}
+
+.readingcol{
+    width: 70ch;
+}

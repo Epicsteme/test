@@ -40,3 +40,7 @@ p {
 .scrolly{
 overflow-y: scroll;
 }
+
+.bg-grey50{
+    background-color: rgb(50,50,51);
+}

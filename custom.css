@@ -2,16 +2,6 @@
     --bs-body-bg: #f5f5f7;
 }
 
-.accordion {
-    --bs-accordion-btn-focus-box-shadow: none;
-    --bs-accordion-active-bg: none;
-    --bs-accordion-bg: none;
-}
-
-.accordion-button:not(.collapsed) {
-    box-shadow: none;
-}
-
 .navbar {
     --bs-navbar-toggler-border-color: none;
     --bs-navbar-toggler-focus-width: none;
@@ -22,13 +12,6 @@
     white-space: nowrap;
 }
 
-.vh75 {
-    height: 75vh;
-}
-
-.vw75{
-    width: 75vw;
-}
 a {
     text-decoration: none;
 }

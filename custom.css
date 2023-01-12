@@ -20,13 +20,16 @@ p {
     color: black;
 }
 
-.scrolly{
-overflow-y: scroll;
+.scrolly {
+    overflow-y: scroll;
 }
 
-.card-subtitle{
-    margin-top: calc(-0.5 * var(--bs-card-title-spacer-y));
-    margin-bottom: 0;
+.card-title {
+    font-weight: 400;
+    color: red;
+}
+
+.card-subtitle {
     text-decoration: none;
     color: rgb(108, 117, 125);
     font-weight: 400;

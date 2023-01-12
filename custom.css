@@ -28,5 +28,5 @@ overflow-y: scroll;
     margin-top: calc(-0.5 * var(--bs-card-title-spacer-y));
     margin-bottom: 0;
     text-decoration: none;
-    color: rgb(108, 117, 125);
+    color: red;
 }

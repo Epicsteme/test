@@ -5,7 +5,7 @@ class MyHeader extends HTMLElement {
 
         <nav class="navbar navbar-expand-lg  m-0">
 
-            <a href="index.html"
+            <a href="https://epicsteme.github.io/"
                class="navbar-brand">
                 <h1 class="text-start m-0">
                     Aditya

@@ -2,11 +2,12 @@
 class MyHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
+        
         <div id="header">
 
         <nav class="navbar navbar-expand-lg  m-0">
 
-            <a href="https://epicsteme.github.io/"
+            <a href="./"
                class="navbar-brand">
                 <h1 class="text-start m-0">
                     Aditya
@@ -29,7 +30,7 @@ class MyHeader extends HTMLElement {
                 <ul class="navbar-nav ms-auto">
                     <li class="ms-3">
                         <a class="nav-link"
-                           href="https://epicsteme.github.io/"> Home </a>
+                           href="./"> Home </a>
                     </li>
                     <li class="ms-3">
                         <a class="nav-link"
@@ -58,7 +59,6 @@ class MyHeader extends HTMLElement {
         `
     }
 }
-
 //implement function
 customElements.define('my-header', MyHeader)
 
@@ -71,7 +71,7 @@ class FooterNav extends HTMLElement {
         
 <hr class="container-lg">
 
-<a href="https://epicsteme.github.io/"> Home </a>
+<a href="./"> Home </a>
 |
 <a href="blog.html"> Blog </a>
 |
@@ -85,7 +85,6 @@ class FooterNav extends HTMLElement {
 `
     }
 }
-
 //implement function
 customElements.define('footer-nav', FooterNav)
 

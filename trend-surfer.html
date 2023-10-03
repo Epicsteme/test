@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html class="scrolly" lang="en">
+<html class="scrolly"
+      lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
-    <META HTTP-EQUIV="Expires" CONTENT="-1">
+    <META HTTP-EQUIV="Pragma"
+          CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires"
+          CONTENT="-1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+          crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
 
-    
+    <script type="module"
+            src="header.js"></script>
 
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet"
+          href="custom.css">
 
     <title>
         Trend Surfer
@@ -27,47 +36,7 @@
 <body>
     <div class="container-lg">
 
-        <div id="header">
-            <nav class="navbar navbar-expand-lg navbar-light m-0">
-
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="text-start m-0">
-                        Aditya
-                    </h1>
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false"
-                    aria-label="Toggle navigation">
-
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="toggleMobileMenu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="ms-3">
-                          <a class="nav-link" href="https://epicsteme.github.io/"> Home </a>
-                        </li>
-                        <li class="ms-3">
-                            <a class="nav-link" href="blog.html"> Blog </a>
-                        </li>
-                      
-                        <li class="ms-3">
-                            <a class="nav-link" href="3d-models.html"> 3D Models </a>
-                        </li>
-                        <li class="ms-3">
-                            <a class="nav-link" href="photography.html"> Photography </a>
-                        </li>
-                        <li class="ms-3">
-                            <a class="nav-link" href="creative-writing.html"> Creative Writing </a>
-                        </li>
-                    </ul>
-                </div>
-
-            </nav>
-
-            <hr class="mt-0 mb-3">
-        </div>
+        <my-header></my-header>
 
         <div class="container-fluid">
 
@@ -76,13 +45,15 @@
             </div>
 
             <div class="container-fluid">
-                <img class="img-fluid mx-auto d-block rounded" src="img/trend-surfer-cover-gif.gif"
-                    alt="gameplay-cover-gif">
+                <img class="img-fluid mx-auto d-block rounded"
+                     src="img/trend-surfer-cover-gif.gif"
+                     alt="gameplay-cover-gif">
 
                 <div class="row d-flex justify-content-center mt-2">
                     <div class="col-12 col-md-3 col-lg-2 d-flex justify-content-center">
                         <a href="https://pikonparadox.itch.io/trend-surfer">
-                            <button type="button" class="btn btn-primary rounded-pill">Let's Play!</button>
+                            <button type="button"
+                                    class="btn btn-primary rounded-pill">Let's Play!</button>
                         </a>
                     </div>
 
@@ -183,56 +154,71 @@
                 </div>
 
                 <div class="col-6 col-md-4 col-lg-3">
-                    <a href="who-opened-the-hatch.html" class="text-decoration-none text-black">
-                        <img class="card-img-top rounded" src="img/woth-tile.jpg" alt="tile who opened the hatch">
+                    <a href="who-opened-the-hatch.html"
+                       class="text-decoration-none text-black">
+                        <img class="card-img-top rounded"
+                             src="img/woth-tile.jpg"
+                             alt="tile who opened the hatch">
                         <p>Who opened the hatch?</p>
                     </a>
                 </div>
 
                 <div class="col-6 col-md-4 col-lg-3">
-                    <a href="ten-jumps.html" class="text-decoration-none text-black">
-                        <img class="card-img-top rounded" src="img/ten-jumps-cover-tile.jpg"
-                            alt="temposition-cover-tile">
+                    <a href="ten-jumps.html"
+                       class="text-decoration-none text-black">
+                        <img class="card-img-top rounded"
+                             src="img/ten-jumps-cover-tile.jpg"
+                             alt="temposition-cover-tile">
                         <p>Ten Jumps</p>
                     </a>
                 </div>
 
                 <div class="col-6 col-md-4 col-lg-3">
-                    <a href="temposition.html" class="text-decoration-none text-black">
-                        <img class="card-img-top rounded" src="img/temposition-cover-tile.jpg"
-                            alt="temposition-cover-tile">
+                    <a href="temposition.html"
+                       class="text-decoration-none text-black">
+                        <img class="card-img-top rounded"
+                             src="img/temposition-cover-tile.jpg"
+                             alt="temposition-cover-tile">
                         <p>Temposition</p>
                     </a>
                 </div>
 
                 <div class="col-6 col-md-4 col-lg-3">
-                    <a href="blazing-bounce.html" class="text-decoration-none text-black">
-                        <img class="card-img-top rounded" src="img/blazing-bounce-cover1.gif"
-                            alt="blazing-bounce-cover-tile">
+                    <a href="blazing-bounce.html"
+                       class="text-decoration-none text-black">
+                        <img class="card-img-top rounded"
+                             src="img/blazing-bounce-cover1.gif"
+                             alt="blazing-bounce-cover-tile">
                         <p>Blazing Bounce</p>
                     </a>
                 </div>
 
                 <div class="col-6 col-md-4 col-lg-3">
-                    <a href="rainy-rhythm.html" class="text-decoration-none text-black">
-                        <img class="card-img-top rounded" src="img/rainy-rhythm-cover-gif-tile.gif"
-                            alt="temposition-cover-tile">
+                    <a href="rainy-rhythm.html"
+                       class="text-decoration-none text-black">
+                        <img class="card-img-top rounded"
+                             src="img/rainy-rhythm-cover-gif-tile.gif"
+                             alt="temposition-cover-tile">
                         <p>Rainy Rhythm</p>
                     </a>
                 </div>
 
                 <div class="col-6 col-md-4 col-lg-3">
-                    <a href="trend-surfer.html" class="text-decoration-none text-black">
-                        <img class="card-img-top rounded" src="img/trend-surfer-cover-gif-tile.gif"
-                            alt="temposition-cover-tile">
+                    <a href="trend-surfer.html"
+                       class="text-decoration-none text-black">
+                        <img class="card-img-top rounded"
+                             src="img/trend-surfer-cover-gif-tile.gif"
+                             alt="temposition-cover-tile">
                         <p>Trend Surfer</p>
                     </a>
                 </div>
 
                 <div class="col-6 col-md-4 col-lg-3">
-                    <a href="hyper.html" class="text-decoration-none text-black">
-                        <img class="card-img-top rounded" src="img/hyper-cover-gif-tile.gif"
-                            alt="temposition-cover-tile">
+                    <a href="hyper.html"
+                       class="text-decoration-none text-black">
+                        <img class="card-img-top rounded"
+                             src="img/hyper-cover-gif-tile.gif"
+                             alt="temposition-cover-tile">
                         <p>Hyper</p>
                     </a>
                 </div>

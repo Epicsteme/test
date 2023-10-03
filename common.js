@@ -1,3 +1,4 @@
+//add header navigation
 class MyHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -35,16 +36,16 @@ class MyHeader extends HTMLElement {
                            href="blog.html"> Blog </a>
                     </li>
                     <li class="ms-3">
+                    <a class="nav-link"
+                    href="literature.html"> Literature </a>
+                    </li>
+                    <li class="ms-3">
                         <a class="nav-link"
                            href="3d-models.html"> 3D Models </a>
                     </li>
                     <li class="ms-3">
                         <a class="nav-link"
                            href="photography.html"> Photography </a>
-                    </li>
-                    <li class="ms-3">
-                        <a class="nav-link"
-                           href="creative-writing.html"> Creative Writing </a>
                     </li>
                 </ul>
 
@@ -58,4 +59,33 @@ class MyHeader extends HTMLElement {
     }
 }
 
+//implement function
 customElements.define('my-header', MyHeader)
+
+
+//add footer navigation
+class FooterNav extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+<div class="container-lg text-center mb-3">
+        
+<hr class="container-lg">
+
+<a href="https://epicsteme.github.io/"> Home </a>
+|
+<a href="blog.html"> Blog </a>
+|
+<a href="literature.html"> Literature </a>
+|
+<a href="3d-models.html"> 3D Models </a>
+|
+<a href="photography.html"> Photography </a>
+
+</div>
+`
+    }
+}
+
+//implement function
+customElements.define('footer-nav', FooterNav)
+

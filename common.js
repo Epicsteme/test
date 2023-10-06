@@ -3,7 +3,7 @@ class MyHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         
-        <div id="header">
+        <div class="container-lg d-flex flex-column" id="header">
 
         <nav class="navbar navbar-expand-lg  m-0">
 

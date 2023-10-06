@@ -88,3 +88,4 @@ class FooterNav extends HTMLElement {
 //implement function
 customElements.define('footer-nav', FooterNav)
 
+

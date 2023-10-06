@@ -6,7 +6,7 @@ class MyHeader extends HTMLElement {
 
         <nav class="navbar navbar-expand-lg  m-0">
 
-            <a href="https://epicsteme.github.io/"
+            <a href="./"
                class="navbar-brand">
                 <h1 class="text-start m-0">
                     Aditya
@@ -26,27 +26,41 @@ class MyHeader extends HTMLElement {
 
             <div class="collapse navbar-collapse "
                  id="toggleMobileMenu">
+
                 <ul class="navbar-nav ms-auto">
+
                     <li class="ms-3">
-                        <a class="nav-link"
-                           href="./"> Home </a>
+                        <a class="nav-link" href="./"> Home </a>
                     </li>
+
                     <li class="ms-3">
-                        <a class="nav-link"
-                           href="blog.html"> Blog </a>
+                        <a class="nav-link" href="blog.html"> Blog </a>
                     </li>
+
                     <li class="ms-3">
-                    <a class="nav-link"
-                    href="literature.html"> Literature </a>
+                        <a class="nav-link" href="movies.html"> Movies </a>
                     </li>
+
                     <li class="ms-3">
-                        <a class="nav-link"
-                           href="3d-models.html"> 3D Models </a>
+                        <a class="nav-link" href="paintings.html"> Paintings </a>
                     </li>
+
                     <li class="ms-3">
-                        <a class="nav-link"
-                           href="photography.html"> Photography </a>
+                        <a class="nav-link" href="eggshells.html"> Eggshells </a>
                     </li>
+
+                    <li class="ms-3">
+                        <a class="nav-link" class="nav-link" href="literature.html"> Literature </a>
+                    </li>
+
+                    <li class="ms-3">
+                        <a class="nav-link" href="3d-models.html"> 3D Models </a>
+                    </li>
+
+                    <li class="ms-3">
+                        <a class="nav-link" href="photography.html"> Photography </a>
+                    </li>
+
                 </ul>
 
             </div>
@@ -54,6 +68,7 @@ class MyHeader extends HTMLElement {
         </nav>
 
         <hr class="mt-0 mb-3">
+
     </div>
         `
     }
@@ -74,6 +89,12 @@ class FooterNav extends HTMLElement {
 <a href="./"> Home </a>
 |
 <a href="blog.html"> Blog </a>
+|
+<a href="movies.html"> Movies </a>
+|
+<a href="paintings.html"> Paintings </a>
+|
+<a href="eggshells.html"> Eggshells </a>
 |
 <a href="literature.html"> Literature </a>
 |

@@ -38,6 +38,18 @@ class MyHeader extends HTMLElement {
                     </li>
                     <li class="ms-3">
                     <a class="nav-link"
+                    href="movies.html"> Movies </a>
+                    </li>
+                    <li class="ms-3">
+                    <a class="nav-link"
+                    href="paintings.html"> Paintings </a>
+                    </li>
+                    <li class="ms-3">
+                    <a class="nav-link"
+                    href="eggshells.html"> Eggshells </a>
+                    </li>
+                    <li class="ms-3">
+                    <a class="nav-link"
                     href="literature.html"> Literature </a>
                     </li>
                     <li class="ms-3">
@@ -69,17 +81,39 @@ class FooterNav extends HTMLElement {
         this.innerHTML = `
 <div class="container-lg text-center mb-3">
         
-<hr class="container-lg">
+    <hr class="container-lg">
 
-<a href="./"> Home </a>
-|
-<a href="blog.html"> Blog </a>
-|
-<a href="literature.html"> Literature </a>
-|
-<a href="3d-models.html"> 3D Models </a>
-|
-<a href="photography.html"> Photography </a>
+    <div class="my-2">
+    <a href="home.html"> Home </a>
+    </div>
+
+    <div class="my-2">
+    <a href="blog.html"> Blog </a>
+    </div>
+
+    <div class="my-2">
+    <a href="movies.html"> Movies </a>
+    </div>
+
+    <div class="my-2">
+    <a href="paintings.html"> Paintings </a>
+    </div>
+
+    <div class="my-2">
+    <a href="eggshells.html"> Eggshells </a>
+    </div>
+
+    <div class="my-2">
+    <a href="literature.html"> Literature </a>
+    </div>
+
+    <div class="my-2">
+    <a href="3d-models.html"> 3D Models </a>
+    </div>
+    
+    <div class="my-2">
+    <a href="photography.html"> Photography </a>
+    </div>
 
 </div>
 `

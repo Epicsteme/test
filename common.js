@@ -38,7 +38,15 @@ class MyHeader extends HTMLElement {
                     </li>
 
                     <li class="ms-3">
-                        <a class="nav-link" href="movies.html"> Movies </a>
+                        <a class="nav-link" href="3d-models.html"> 3D Models </a>
+                    </li>
+
+                    <li class="ms-3">
+                        <a class="nav-link" class="nav-link" href="literature.html"> Literature </a>
+                    </li>
+
+                    <li class="ms-3">
+                        <a class="nav-link" href="photography.html"> Photography </a>
                     </li>
 
                     <li class="ms-3">
@@ -50,15 +58,7 @@ class MyHeader extends HTMLElement {
                     </li>
 
                     <li class="ms-3">
-                        <a class="nav-link" class="nav-link" href="literature.html"> Literature </a>
-                    </li>
-
-                    <li class="ms-3">
-                        <a class="nav-link" href="3d-models.html"> 3D Models </a>
-                    </li>
-
-                    <li class="ms-3">
-                        <a class="nav-link" href="photography.html"> Photography </a>
+                        <a class="nav-link" href="movies.html"> Movies </a>
                     </li>
 
                 </ul>
@@ -90,17 +90,17 @@ class FooterNav extends HTMLElement {
 |
 <a href="blog.html"> Blog </a>
 |
-<a href="movies.html"> Movies </a>
+<a href="3d-models.html"> 3D Models </a>
+|
+<a href="literature.html"> Literature </a>
+|
+<a href="photography.html"> Photography </a>
 |
 <a href="paintings.html"> Paintings </a>
 |
 <a href="eggshells.html"> Eggshells </a>
 |
-<a href="literature.html"> Literature </a>
-|
-<a href="3d-models.html"> 3D Models </a>
-|
-<a href="photography.html"> Photography </a>
+<a href="movies.html"> Movies </a>
 
 </div>
 `

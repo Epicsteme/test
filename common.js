@@ -67,7 +67,7 @@ class MyHeader extends HTMLElement {
 
         </nav>
 
-        <hr class="mt-0 mb-3">
+        <hr class="mt-0 mb-2">
 
     </div>
         `

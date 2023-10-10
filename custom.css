@@ -40,6 +40,35 @@ p {
     font-weight: 400;
 }
 
-video{
+video {
     display: block;
+}
+
+.text-violet {
+    color: rgb(238, 130, 238);
+}
+
+.text-indigo {
+    color: rgb(75, 0, 130);
+}
+
+.text-blue {
+    color: rgb(0, 0, 255);
+}
+
+.text-green {
+    color: rgb(0, 128, 0);
+}
+
+.text-yellow {
+    color: orange
+}
+
+.text-orange {
+    color: rgb(255, 100, 0);
+}
+
+.hover-underline:hover{
+    text-decoration-line: underline;
+    text-decoration-color: initial;
 }

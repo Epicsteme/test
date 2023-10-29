@@ -74,9 +74,10 @@ class MyHeader extends HTMLElement {
     }
 }
 
-//implement function
+//implement function header
 customElements.define('my-header', MyHeader)
 
+//
 
 //add footer navigation
 class FooterNav extends HTMLElement {
@@ -107,6 +108,7 @@ class FooterNav extends HTMLElement {
     }
 }
 
-//implement function
+//implement function footer
 customElements.define('footer-nav', FooterNav)
 
+//

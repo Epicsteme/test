@@ -27,7 +27,8 @@ p {
 .card {
     --bs-card-border-width: 0px;
     /*outline: 1px solid rgb(237, 237, 240);*/
-    background-color: transparent;
+    background-color: none;
+    background: none;
 }
 
 .card-title {

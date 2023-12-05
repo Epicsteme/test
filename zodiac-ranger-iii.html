@@ -67,9 +67,9 @@
 
                 <h3 class="display-6">Introduction</h3>
                 <p class="lh-lg">
-                    This project was particularly challenging for me as I was in a significantly brighter place than usual in personal life. For this 20-second-game, I chose to build on the mechanics from my previous games. The gravity assist is inspired by Zodiac Ranger HSS, the second game from the Zodiac series. The enemy ships' behaviour is inspired by Hyper, my first completed project on Unity engine.
+                    This project was particularly challenging for me as I was in a significantly brighter place than usual in personal life. For this 20-second-game, I chose to build on the mechanics from my previous games. The gravity mechanic is inspired by Zodiac Ranger HSS, the second game from Zodiac series. The hostile ships' behaviour is inspired by Hyper, my first completed project on Unity engine.
 
-                    I worked with an artist, <a href="https://lesflaya.itch.io/"> Madi Funk </a> from Canada,
+                    For this game, I worked with an artist, <a href="https://lesflaya.itch.io/"> Madi Funk </a> from Canada,
                     and a music composer, <a href="https://itch.io/profile/j-ontiveros"> Jonathan Ontiveros </a>from USA.
                 </p>
                 <p class="lh-lg">
@@ -122,7 +122,7 @@
                 <img class="img-fluid mx-auto d-block rounded"
                      src="img/zr3-comet-trails.jpg">
                 <p class="text-center">
-                    Comets orbiting star
+                    Comets orbiting
                 </p>
                 <p class="lh-lg">
                     One of the most important challenges I faced was conveying visually that the star's gravity affects the player ship. Though it is not the most effective method, I added little lines (pretend comet trails) orbiting the star in the direction that the player is expected to orbit the star.
@@ -133,20 +133,20 @@
                 <h3 class="display-6">Enemy movement</h3>
 
                 <p class="lh-lg">
-                    The game would randomly choose from an array of speeds and assign the speed to each ship. Though this provided a bit of variety, after a few rounds of playtests, it turned out to be better to have all enemy ships move at the same speed and have the speed increase every time an enemy is shot. This helped in maintaining a little bit of adaptive difficulty.
+                    Initially, the game would choose randomly from an array of speeds and assign different speed to each ship. Though this provided a bit of variety, after a few rounds of playtests, it turned out to be better to have all enemy ships move at the same speed and have the speed increase every time an enemy is shot. This helped in maintaining a little bit of adaptive difficulty.
                 </p>
                
                 <p class="lh-lg">
                     The enemy count was initially set to eight but since the gameplay felt relatively easy, it was increased to 10.
 
-                    The enemies were moved further away from the center since the playable area did not feel large enough initially.
+                    The enemies were eventually moved further away from the center since the playable area did not feel large enough.
                 </p>
 
                 <br>
 
                 <h3 class="display-6">Enemy shooting</h3>
                 <p class="lh-lg">
-                    The enemies fire one shot per second. The game would randomly choose one of the enemies (from a list) as the starting position for the shots.
+                    The enemies fire one shot per second. The game would randomly choose one of the enemies (from a list) as the starting position for the missiles.
                 </p>
                 <p class="lh-lg">
                     The enemy missiles move slow enough to allow player to fly around them but also fast enough to make it feel challenging.
@@ -156,18 +156,18 @@
 
                 <h3 class="display-6">Player shooting</h3>
                 <p class="lh-lg">
-                    Player shooting started out as a tap to fire each shot. This quickly became fatiguing over a few rounds. So the player was allowed to fire continuously by holding the button.
+                    Player shooting started out as tap-for-each-shot. This quickly became fatiguing over a few rounds. So the player was allowed to fire continuously by holding the button.
                 </p>
                 <img class="img-fluid mx-auto d-block rounded"
-                     src="img/zr3-comet-trails.jpg">
+                     src="img/zr3-player-shoot.gif">
                 <p class="text-center">
                     Player shooting
                 </p>
                 <p class="lh-lg">
-                    To prevent the game from becoming too easy, each clip is limited to a certain amount of shots, and after a clip is emptied, the player must wait for it to auto-reload. This helped reduce spamming of shots.
+                    To prevent the game from becoming too easy, each clip is limited to a certain amount of shots, and after a clip is emptied, the player must wait for it to auto-reload. This helped reduce spamming of shots while also helping regulate difficulty.
                 </p>
                 <p class="lh-lg">
-                    The time between each shot was initially set to be greater than what was set for the jam version. It was increased so that the player would be able to hit their intended target with relatively less of a challenge considering there was no crosshair and the ship is turning and moving at its given rate which was desirable.
+                    The fire rate was initially set to be lower than what was set for the jam version. It was eventually increased so that the player would be able to hit their intended target with relatively less of a challenge considering there is no crosshair and the ship is turning and moving at its given rate.
                 </p>
                 <p class="lh-lg">
                     In a project where there is going to be a lot of shooting, it may be better to have a fixed number of missile prefabs in a queue (pool) and call them in and out instead of instantiating new game objects each time an enemy or the player fires.
@@ -177,15 +177,15 @@
 
                 <h3 class="display-6">Last five seconds</h3>
                 <p class="lh-lg">
-                    In the last five seconds of a round, the camera zooms out completely. This would allow player to see all of the enemies that are left in the scene.
+                    In the last five seconds of a round, the camera zooms out completely. This would allow player to see more clearly the enemies left in the scene.
                 </p>
                 <img class="img-fluid mx-auto d-block rounded"
-                     src="img/zodiac-ranger-hss.gif">
+                     src="img/zr3-zoomout.gif">
                 <p class="text-center">
                     Camera zoom out
                 </p>
                 <p class="lh-lg">
-                    Also, the volume lowers for background music along with most sound effects. The player would still be able to hear enemies firing, ammo reload, and explosions so that there would be awareness of the elements that matter the most in that context.
+                    Also, the volume lowers for background music along with most sound effects. The player would still be able to hear enemies firing, ammo reload, and explosions so that there would be a bit of heightened awareness of the elements that matter the most in that context.
                 </p>
                 <p class="lh-lg">
                     I had to set this carefully, having the audio fade out over time. As the sounds fade, the ticking sound effect blends in well enough, preventing the experience from feeling abrupt or disjointed.
@@ -202,15 +202,15 @@
                     Adding the few extra booleans was challenging to an extent as it required me to change how other mechanics were called or were functioning. For example, for the "Kamikaze" achievement to be unlocked, I had to change the code so that upon winning, the player ship would either become immortal or not depending on whether the win state was achieved through kamikaze. I also had to change the way player death state called game-restart function so that it would show the victory screen instead of lose screen when conditions met.
                 </p>
                 <img class="img-fluid mx-auto d-block rounded"
-                     src="img/zodiac-ranger-hss.gif">
+                     src="img/zr3-ach-1.jpg">
                 <p class="text-center">
                     Achievement notification
                 </p>
                 <p class="lh-lg">
-                    I almost avoided displaying notifications for when achievements unlocked. After taking a break, I put together a canvas game object that would exist across scenes along with audio game object. I hid the notification item just outside the screen since this is a relatively small game and performance is unlikely to be affected significantly. The notification design was partially inspired by GTA IV.
+                    I almost avoided displaying notifications for when achievements unlocked. After taking a break, I put together a canvas game object that would exist across scenes along with audio game object. I hid the notification item just outside the screen since this is a relatively small game and performance is unlikely to be affected significantly.
                 </p>
                 <img class="img-fluid mx-auto d-block rounded"
-                     src="img/zodiac-ranger-hss.gif">
+                src="img/zr3-ach-2.jpg">
                 <p class="text-center">
                     Achievement reminder
                 </p>
@@ -225,7 +225,7 @@
                     I considered conveying time/countdown through the use of objects within the environment. One of the ideas was to set twenty lights on the dyson sphere, and have each one go on or off every second. However, this did not feel appropriate enough for the Watsonion perspective. It felt easier to comprehend the time in a relatively long bar. A little clock icon was added beside the bar to help convey what the bar represented.
                 </p>
                 <img class="img-fluid mx-auto d-block rounded"
-                     src="img/zodiac-ranger-hss.gif">
+                     src="img/zr3-ui-timer.jpg">
                 <p class="text-center">
                     UI - Time and enemy count
                 </p>
@@ -233,12 +233,12 @@
                     To display enemy count, I set up ten enemy sprites and had each one change color and transparency for every enemy eliminated. The way these are arranged right under the timer, it almost feels like a little race between the two UI items!
                 </p>
                 <img class="img-fluid mx-auto d-block rounded"
-                     src="img/zodiac-ranger-hss.gif">
+                     src="img/zr3-ui-ammo.gif">
                 <p class="text-center">
                     UI - Ammo
                 </p>
                 <p class="lh-lg">
-                    To convey ammo count, I used an icon of the shot itself with radial fill. A slightly larger copy of the icon becomes visible for a brief moment on top of it in order to provide visual confirmation (in addition to audio confirmation) to the player that ammo recharged. This idea was partially inspired by the UI for operator abilities in Rainbow Six Siege.
+                    To convey ammo count, I used an icon of the shot itself with radial fill. A slightly larger copy of the icon becomes visible for a brief moment on top of it in order to provide visual confirmation (in addition to audio confirmation) to the player that ammo recharged.
                 </p>
 
                 <br>
@@ -248,7 +248,8 @@
                     It has become one of my signature moves to include absurd humor in the things I create. Absurdity is also one of the themes of the game. Building on this, and to entertain the player and myself, I added a little image of a chicken in space suit holding an almost-regular-looking chicken. The image has a 20% chance of appearing each time the Credits page is opened, and it scrolls past the screen. It was generated using Stable Diffusion.
                 </p>
                 <img class="img-fluid mx-auto d-block rounded"
-                     src="img/zr3-wohn-the-space-chicken-256.png">
+                     src="img/zr3-wohn-the-space-chicken2-256.png"
+                     alt="wohn-the-space-chicken">
                 <p class="text-center">
                     Wohn the space chicken
                 </p>
@@ -263,93 +264,12 @@
                     Initially I had the enemies charge up for a brief moment before firing. The idea was to let the player know where the next shot was going to come from. However, the way I set the code caused a bug where if the player shot the enemy ship that was charging up, the code would stop working as intended and none of the enemies would fire in that round. I removed the charge-up mechanic instead of trying to fix it since I prefered to spend more time and effort on the rest of the mechanics.
                 </p>
                 <p class="lh-lg">
-                    In restrospect, this could have been fixed by making the enemy ship temporarily immortal while it is charging up a shot, or by checking whether the ship is still available after the charge up period.
+                    In restrospect, this could have been fixed by making the enemy ship temporarily immortal while it is charging up a shot, or by initiating charge-up as a seperate function and checking whether the ship is still available after the charge up period.
                 </p>
 
                 <br>
 
             </div>
-            <hr>
-
-        </div>
-
-        <div class="row g-2">
-
-            <div class="text-center m-0">
-                <p class="display-6">LEARN MORE</p>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <a href="who-opened-the-hatch.html"
-                   class="text-decoration-none text-black">
-                    <img class="card-img-top rounded"
-                         src="img/woth-tile.jpg"
-                         alt="tile who opened the hatch">
-                    <p>Who opened the hatch?</p>
-                </a>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <a href="ten-jumps.html"
-                   class="text-decoration-none text-black">
-                    <img class="card-img-top rounded"
-                         src="img/ten-jumps-cover-tile.jpg"
-                         alt="temposition-cover-tile">
-                    <p>Ten Jumps</p>
-                </a>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <a href="temposition.html"
-                   class="text-decoration-none text-black">
-                    <img class="card-img-top rounded"
-                         src="img/temposition-cover-tile.jpg"
-                         alt="temposition-cover-tile">
-                    <p>Temposition</p>
-                </a>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <a href="blazing-bounce.html"
-                   class="text-decoration-none text-black">
-                    <img class="card-img-top rounded"
-                         src="img/blazing-bounce-cover1.gif"
-                         alt="blazing-bounce-cover-tile">
-                    <p>Blazing Bounce</p>
-                </a>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <a href="rainy-rhythm.html"
-                   class="text-decoration-none text-black">
-                    <img class="card-img-top rounded"
-                         src="img/rainy-rhythm-cover-gif-tile.gif"
-                         alt="temposition-cover-tile">
-                    <p>Rainy Rhythm</p>
-                </a>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <a href="trend-surfer.html"
-                   class="text-decoration-none text-black">
-                    <img class="card-img-top rounded"
-                         src="img/trend-surfer-cover-gif-tile.gif"
-                         alt="temposition-cover-tile">
-                    <p>Trend Surfer</p>
-                </a>
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <a href="hyper.html"
-                   class="text-decoration-none text-black">
-                    <img class="card-img-top rounded"
-                         src="img/hyper-cover-gif-tile.gif"
-                         alt="temposition-cover-tile">
-                    <p>Hyper</p>
-                </a>
-            </div>
-
-
 
         </div>
 

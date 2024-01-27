@@ -9,7 +9,7 @@ class MyHeader extends HTMLElement {
             <a href="./"
                class="navbar-brand">
                 <h1 class="text-start m-0">
-                    Aditya
+                    Epicsteme
                 </h1>
             </a>
 
@@ -38,7 +38,7 @@ class MyHeader extends HTMLElement {
                     </li>
 
                     <li class="ms-3">
-                        <a class="nav-link" href="https://pikonparadox.itch.io/"> Games </a>
+                        <a class="nav-link" href="https://pikonparadox.itch.io/" target="_blank"> Games </a>
                     </li>
 
                     <li class="ms-3">

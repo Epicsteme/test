@@ -38,7 +38,7 @@ class MyHeader extends HTMLElement {
                     </li>
 
                     <li class="ms-3">
-                        <a class="nav-link" href="https://pikonparadox.itch.io/" target="_blank"> Games </a>
+                        <a class="nav-link" class="nav-link" href="literature.html"> Literature </a>
                     </li>
 
                     <li class="ms-3">
@@ -46,19 +46,11 @@ class MyHeader extends HTMLElement {
                     </li>
 
                     <li class="ms-3">
-                        <a class="nav-link" class="nav-link" href="literature.html"> Literature </a>
+                        <a class="nav-link" href="https://pikonparadox.itch.io/" target="_blank"> Games </a>
                     </li>
 
                     <li class="ms-3">
-                        <a class="nav-link" href="photography.html"> Photography </a>
-                    </li>
-
-                    <li class="ms-3">
-                        <a class="nav-link" href="eggshells.html"> Eggshells </a>
-                    </li>
-
-                    <li class="ms-3">
-                        <a class="nav-link" href="movies.html"> Movies </a>
+                        <a class="nav-link" class="nav-link" href="about.html"> About </a>
                     </li>
 
                 </ul>
@@ -91,17 +83,13 @@ class FooterNav extends HTMLElement {
 |
 <a href="blog.html"> Blog </a>
 |
-<a href="https://pikonparadox.itch.io/"> Games </a>
+<a href="literature.html"> Literature </a>
 |
 <a href="3d-models.html"> 3D Models </a>
 |
-<a href="literature.html"> Literature </a>
+<a href="https://pikonparadox.itch.io/"> Games </a>
 |
-<a href="photography.html"> Photography </a>
-|
-<a href="eggshells.html"> Eggshells </a>
-|
-<a href="movies.html"> Movies </a>
+<a href="about.html"> About </a>
 
 </div>
 `

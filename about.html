@@ -1,133 +1,100 @@
 <!DOCTYPE html>
-<html class="scrolly"
-      lang="en">
+<html class="scrolly" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"
-          content="IE=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
 
-    <META HTTP-EQUIV="Pragma"
-          CONTENT="no-cache">
-    <META HTTP-EQUIV="Expires"
-          CONTENT="-1">
+    <site-assets></site-assets>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-          crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-            crossorigin="anonymous"></script>
+    <script type="module" src="common.js"></script>
 
-    <script type="module"
-            src="common.js"></script>
+    <link rel="stylesheet" href="custom.css" />
 
-    <link rel="stylesheet"
-          href="custom.css">
+    <title>About</title>
+  </head>
 
-    <title>
-        About
-    </title>
-</head>
+  <body>
+    <main class="container-lg" id="main-content" tabindex="-1">
+      <my-header></my-header>
 
-<body>
-
-    <div class="container-lg">
-
-        <my-header></my-header>
-
-        <div class="row">
-            <div class="col-sm-12 col-md-9 col-lg-5 mx-auto">
-
-                <div class="container-fluid">
-                    <img class="img-fluid mx-auto d-block col-sm-5 col-md-5 col-lg-5"
-                         src="img/pfp-aditya.png">
+      <div class="row">
+        <div class="col-sm-12 col-md-9 col-lg-5 mx-auto">
+          <div class="container-fluid">
+            <img
+              class="img-fluid mx-auto d-block col-sm-5 col-md-5 col-lg-5"
+              src="img/pfp-aditya.png"
+              alt="Portrait of Aditya"
+            />
+          </div>
+          <p class="lh-lg">
+            Some call me Aditya. I hold master's degrees in Education, English,
+            Applied Psychology, and Philosophy, bachelor's degrees in Education, and
+            Journalism, post graduate diploma in English Language Teaching, and
+            Game Art and Design. I like to
+            write stories, create art, develop games, and...
+          </p>
+          <div
+            class="row row-cols-2 row-cols-md-2 g-2"
+            aria-label="Aditya's activities"
+            role="list"
+          >
+            <div class="col" role="listitem">
+              <div class="card">
+                <img
+                  class="img-fluid mx-auto d-block rounded-circle"
+                  src="img/speech4.jpg"
+                  alt="Aditya teaching others"
+                />
+                <div class="card-body">
+                  <p class="card-text text-center">teach others</p>
                 </div>
-
-                <p class="lh-lg">
-                    Some call me Aditya. I hold a master's degree in English,
-                    bachelor's degree in Education and in Journalism,
-                    post graduate diploma in English Language Teaching and in Game Art and Design.
-
-                    Sharp and pointy things scare me.
-
-                    I like to write stories, create art, develop games, and...
-                </p>
-
-                <div class="row row-cols-2 row-cols-md-3 g-2">
-                    <div class="col">
-                        <div class="card">
-                            <img class="img-fluid mx-auto d-block rounded-circle"
-                                 src="img/speech4.jpg">
-                            <div class="card-body">
-                                <p class="card-text text-center">teach others</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card">
-                            <img class="img-fluid mx-auto d-block rounded-circle"
-                                 src="img/speech2.jpg">
-                            <div class="card-body">
-                                <p class="card-text text-center">give speeches</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card">
-                            <img class="img-fluid mx-auto d-block rounded-circle"
-                                 src="img/speech1.jpg">
-                            <div class="card-body">
-                                <p class="card-text text-center">ask questions</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card">
-                            <img class="img-fluid mx-auto d-block rounded-circle"
-                                 src="img/speech3.jpg">
-                            <div class="card-body">
-                                <p class="card-text text-center">discuss everything</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card">
-                            <img class="img-fluid mx-auto d-block rounded-circle"
-                                 src="img/speech5.jpg">
-                            <div class="card-body">
-                                <p class="card-text text-center">cherish recognition</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card">
-                            <img class="img-fluid mx-auto d-block rounded-circle"
-                                 src="img/pigeons.jpg">
-                            <div class="card-body">
-                                <p class="card-text text-center">befriend everyone!</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                
+              </div>
             </div>
-
+            <div class="col" role="listitem">
+              <div class="card">
+                <img
+                  class="img-fluid mx-auto d-block rounded-circle"
+                  src="img/speech2.jpg"
+                  alt="Aditya giving a speech"
+                />
+                <div class="card-body">
+                  <p class="card-text text-center">give speeches</p>
+                </div>
+              </div>
+            </div>
+            <div class="col" role="listitem">
+              <div class="card">
+                <img
+                  class="img-fluid mx-auto d-block rounded-circle"
+                  src="img/speech1.jpg"
+                  alt="Aditya asking questions"
+                />
+                <div class="card-body">
+                  <p class="card-text text-center">ask questions</p>
+                </div>
+              </div>
+            </div>
+            <div class="col" role="listitem">
+              <div class="card">
+                <img
+                  class="img-fluid mx-auto d-block rounded-circle"
+                  src="img/speech3.jpg"
+                  alt="Aditya discussing controversies"
+                />
+                <div class="card-body">
+                  <p class="card-text text-center">discuss controversies</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </main>
 
-    </div>
-
-</body>
-
-<footer-nav></footer-nav>
-
+    <footer-nav></footer-nav>
+  </body>
 </html>

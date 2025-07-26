@@ -1,113 +1,113 @@
 <!DOCTYPE html>
-<html class="scrolly"
-      lang="en">
+<html class="scrolly" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"
-          content="IE=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
 
-    <META HTTP-EQUIV="Pragma"
-          CONTENT="no-cache">
-    <META HTTP-EQUIV="Expires"
-          CONTENT="-1">
+    <site-assets></site-assets>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-          crossorigin="anonymous">
+    <script type="module" src="common.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="custom.css" />
 
-    <script type="module"
-            src="common.js"></script>
+    <title>Epicsteme</title>
+  </head>
 
-    <link rel="stylesheet"
-          href="custom.css">
-
-    <title>
-        Epicsteme
-    </title>
-
-</head>
-
-<noscript class="mx-auto position-absolute">
+  <noscript class="mx-auto position-absolute">
     <p class="text-center width-auto bg-warning">
-        Enable Javascript to unbreak site.
+      Enable Javascript to unbreak site.
     </p>
-</noscript>
+  </noscript>
 
-<body>
+  <body>
+    <main
+      class="container-lg vh-100 d-flex flex-column"
+      id="main-content"
+      tabindex="-1"
+    >
+      <header>
+        <h1 class="lead display-4 text-center mt-4 mb-1">
+          Hi, <span class="d-md-none"><br /></span>I'm Aditya
+        </h1>
+      </header>
 
-    <div class="container-lg vh-100 d-flex flex-column">
-
-        <p class="display-4 text-center mt-4 mb-1">Hi, <br class="d-md-none">I'm Aditya</p>
-
-        <!--
-        <p class="lead fs-3 text-center">
-            world's most amazing artist*
-        </p>
-        -->
-
-        <div class="align-items-center my-auto mx-auto d-flex flex-column w-100">
-
-            <div class="row w-100">
-
-                <div class="col-6 my-auto text-end">
-                        
-                </div>
-
-                <div class="col-6 text-start border-start border-2 border-secondary">
-
-                    <div class="my-1">
-                        <a class="lead fs-3 text-danger hover-underline"
-                           href="blog.html"> Blog
-                        </a>
-                    </div>
-
-                    <div class="my-0">
-                        <a class="lead fs-3 text-orange hover-underline"
-                           href="literature.html"> Literature
-                        </a>
-                    </div>
-
-                    <div class="my-1">
-                        <a class="lead fs-3 text-yellow hover-underline"
-                           href="3d-models.html"> 3D Models
-                        </a>
-                    </div>
-
-                    <div class="my-1">
-                        <a class="lead fs-3 text-green hover-underline"
-                           href="https://pikonparadox.itch.io/"> Games
-                        </a>
-                    </div>
-
-                    <div class="my-1">
-                        <a class="lead fs-3 hover-underline"
-                           href="about.html"> About
-                        </a>
-                    </div>
-
-                </div>
-
-            </div>
-
+      <section
+        class="align-items-center my-auto mx-auto d-flex flex-column w-100"
+        aria-label="Main navigation"
+      >
+        <div class="row w-100">
+          <div class="col-6 my-auto text-end">
+            <!-- Intentionally left empty for layout symmetry -->
+          </div>
+          <nav
+            class="col-6 text-start border-start border-2 border-secondary"
+            aria-label="Site links"
+          >
+            <ul class="list-unstyled mb-0" role="list">
+              <li class="my-1">
+                <a
+                  class="lead fs-3 text-danger hover-underline"
+                  href="blog.html"
+                  role="link"
+                  >Blog</a
+                >
+              </li>
+              <li class="my-0">
+                <a
+                  class="lead fs-3 text-orange hover-underline"
+                  href="literature.html"
+                  role="link"
+                  >Literature</a
+                >
+              </li>
+              <li class="my-1">
+                <a
+                  class="lead fs-3 text-yellow hover-underline"
+                  href="3d-models.html"
+                  role="link"
+                  >3D Models</a
+                >
+              </li>
+              <li class="my-1">
+                <a
+                  class="lead fs-3 text-green hover-underline"
+                  href="https://pikonparadox.itch.io/"
+                  role="link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Games</a
+                >
+              </li>
+              <li class="my-1">
+                <a
+                  class="lead fs-3 hover-underline"
+                  href="about.html"
+                  role="link"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
+      </section>
 
-        <div class="row mt-auto">
-            <p class="text-dark lead text-center mt-0 mb-2">
-                Email
-                <br>
-                ed.edition248@slmail.me
-            </p>
+      <footer class="row mt-auto">
+        <div class="col-12">
+          <address class="text-dark lead text-center mt-0 mb-2">
+            <span class="lead">Email</span>
+            <br />
+            <a
+              href="mailto:ed.edition248@slmail.me"
+              class="lead hover-underline"
+              >ed.edition248@slmail.me</a
+            >
+          </address>
         </div>
-    </div>
-
-</body>
-
+      </footer>
+    </main>
+  </body>
 </html>

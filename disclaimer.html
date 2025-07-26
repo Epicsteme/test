@@ -1,77 +1,65 @@
 <!DOCTYPE html>
-<html class="scrolly"
-      lang="en">
+<html lang="en" class="scrolly">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"
-          content="IE=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
 
-    <META HTTP-EQUIV="Pragma"
-          CONTENT="no-cache">
-    <META HTTP-EQUIV="Expires"
-          CONTENT="-1">
+    <site-assets></site-assets>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-          crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-            crossorigin="anonymous"></script>
+    <script type="module" src="common.js"></script>
 
-    <script type="module"
-            src="common.js"></script>
+    <link rel="stylesheet" href="custom.css" />
 
-    <link rel="stylesheet"
-          href="custom.css">
+    <title>Disclaimer</title>
+  </head>
+  <body>
+    <main class="container-lg" role="main" aria-labelledby="disclaimer-heading">
+      <my-header role="banner" aria-label="Site Header"></my-header>
 
-    <title>
-        Disclaimer
-    </title>
-</head>
+      <div class="container-fluid">
+        <div class="col-sm-12 col-md-8 col-lg-6 mx-auto">
+          <h1 id="disclaimer-heading" class="text-left display-5">
+            Disclaimer
+          </h1>
 
-<body>
+          <ol class="lh-lg">
+            <li>
+              The contents of this website do not reflect the full or latest
+              views of the author of this website.
+            </li>
+            <li>
+              The author of this website used language(s) in an unconventional
+              manner in some contexts.
+            </li>
+            <li>
+              Any and all interpretations of the contents of this website are
+              invalid except for those which were intended by the author at the
+              time of publication of said content.
+            </li>
+            <li>
+              The views expressed in interview pages may be of those of the
+              speaker(s) at the time of interview and do not necessarily reflect
+              the views of the author of this website.
+            </li>
+          </ol>
 
-    <div class="container-lg">
+          <p class="lh-lg fst-italic">
+            "As soon as you feel yourself against me, you have ceased to
+            understand my position and consequently my arguments! You have to be
+            the victim of the same passion!" Nietzsche
+          </p>
 
-        <my-header></my-header>
-
-        <div class="container-fluid">
-
-            <div class="col-sm-12 col-md-8 col-lg-6  mx-auto">
-                <h1 class="text-left display-5">Disclaimer</h1>
-
-                <p class="lh-lg">
-                    1. The contents of this website do not reflect the full or latest views of the author of this website.
-                </p>
-                <p class="lh-lg">
-                    2. The author of this website used language(s) in an unconventional manner in some contexts.
-                </p>
-                <p class="lh-lg">
-                    3. Any and all interpretations of the contents of this website are invalid except for those which were intended by the author at the time of publication of said content.
-                </p>
-                <p class="lh-lg">
-                    4. The views expressed in interview pages may be of those of the speaker(s) at the time of interview and do not necessarily reflect the views of the author of this website.
-                </p>
-                <p class="lh-lg fst-italic">
-                    "As soon as you feel yourself against me, you have ceased to understand my position and consequently my arguments! You have to be the victim of the same passion!" Nietzsche
-                </p>
-
-                <p class="text-muted">
-                    Updated on 29 October 2023
-                </p>
-
-            </div>
-
+          <p class="text-muted">
+            Updated on <time datetime="2023-10-29">29 October 2023</time>
+          </p>
         </div>
+      </div>
+    </main>
 
-    </div>
-
-</body>
-
-<footer-nav></footer-nav>
-
+    <footer-nav role="contentinfo" aria-label="Site Footer"></footer-nav>
+  </body>
 </html>

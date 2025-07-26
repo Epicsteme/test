@@ -1,314 +1,271 @@
 <!DOCTYPE html>
-<html class="scrolly"
-      lang="en">
+<html class="scrolly" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"
-          content="IE=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
 
-    <META HTTP-EQUIV="Pragma"
-          CONTENT="no-cache">
-    <META HTTP-EQUIV="Expires"
-          CONTENT="-1">
+    <site-assets></site-assets>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-          crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-            crossorigin="anonymous"></script>
+    <script type="module" src="common.js"></script>
 
-    <script type="module"
-            src="common.js"></script>
+    <link rel="stylesheet" href="custom.css" />
 
-    <link rel="stylesheet"
-          href="custom.css">
+    <title>Blog</title>
+  </head>
 
-    <title>
-        Blog
-    </title>
-</head>
-
-<body>
-    <div class="container-lg">
-
+  <body>
+    <div class="container-lg" role="main" aria-label="Blog main content">
+      <header>
         <my-header></my-header>
+      </header>
 
-        <div class="row justify-content-start">
+      <div class="row justify-content-start">
+        <!-- Interviews section -->
+        <section
+          class="col-12 col-md-6 col-lg-3 mb-3"
+          aria-labelledby="interviews"
+        >
+          <h2 class="display-6" id="interviews">Interviews</h2>
 
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-                
-                <p class="display-6" id="interviews">
-                    Interviews
-                </p>
-
-                <div class="card px-0">
-                    <div class="card-body px-0">
-                        <h5 class="card-title">
-                            <a href="jontiveros.html">
-                                Jonathan Ontiveros
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            Sound designer with over ten years of experience.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card px-0">
-                    <div class="card-body px-0">
-                        <h5 class="card-title">
-                            <a href="sheepolution.html">
-                                Sheepolution
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            Indie game dev and co-host of Secret Santa Jam.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card px-0">
-                    <div class="card-body px-0">
-                        <h5 class="card-title">
-                            <a href="akzidenz-20s.html">
-                                Akzidenz
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            Indie game dev and co-host of 20 Second Game Jam.
-                        </p>
-                    </div>
-                </div>
-
+          <article
+            class="card px-0"
+            role="region"
+            aria-label="Interview with Jonathan Ontiveros"
+          >
+            <div class="card-body px-0">
+              <h5 class="card-title fw-bold">
+                <a href="jontiveros.html">Jonathan Ontiveros</a>
+              </h5>
+              <p class="card-text">
+                Sound designer with over ten years of experience.
+              </p>
             </div>
+          </article>
 
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-
-                <p class="display-6" id="post-mortems">
-                    Post-mortems
-                </p>
-
-                <div class="card px-0">
-                    <div class="card-body px-0">
-                        <h5 class="card-title">
-                            <a href="zodiac-ranger-iii.html">
-                                Zodiac Ranger III
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            Pilot spaceship and eliminate hostiles before ship self-destructs.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card px-0">
-                    <div class="card-body px-0">
-                        <h5 class="card-title">
-                            <a href="who-opened-the-hatch.html">
-                                Who opened the hatch?
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            Pilot spaceship and rescue astronauts before oxygen runs out.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card px-0">
-                    <div class="card-body px-0">
-                        <h5 class="card-title">
-                            <a href="ten-jumps.html">
-                                Ten Jumps
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            You have only ten jumps in this platformer.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card px-0">
-                    <div class="card-body px-0">
-                        <h5 class="card-title">
-                            <a href="temposition.html">
-                                Temposition
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            A rhythm based platformer with flashy lights and colours.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card px-0">
-                    <div class="card-body px-0">
-                        <h5 class="card-title">
-                            <a href="blazing-bounce.html">
-                                Blazing Bounce
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            Help rescue people from burning apartments.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card px-0">
-                    <div class="card-body px-0">
-                        <h5 class="card-title">
-                            <a href="rainy-rhythm.html">
-                                Rainy Rhythm
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            A rhythm based game with focus on relaxation.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card px-0">
-                    <div class="card-body px-0">
-                        <h5 class="card-title">
-                            <a href="trend-surfer.html">
-                                Trend Surfer
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            2D platformer game with a chain reaction.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card px-0">
-                    <div class="card-body px-0">
-                        <h5 class="card-title">
-                            <a href="hyper.html">
-                                Hyper
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            Shoot down the hostile ships in this 2D top down game.
-                        </p>
-                    </div>
-                </div>
-
+          <article
+            class="card px-0"
+            role="region"
+            aria-label="Interview with Sheepolution"
+          >
+            <div class="card-body px-0">
+              <h5 class="card-title fw-bold">
+                <a href="sheepolution.html">Sheepolution</a>
+              </h5>
+              <p class="card-text">
+                Indie game dev and co-host of Secret Santa Jam.
+              </p>
             </div>
+          </article>
 
-            <div class="col-12 col-md-6 col-lg-3 mb-3">
-
-                <p class="display-6" id="gamedesign">
-                    Game design
-                </p>
-
-                <div class="card px-0">
-                    <div class="card-body px-0">
-                        <h5 class="card-title">
-                            <a href="participate-in-game-jams.html">
-                                Participate in game jams
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            Beginners are encouraged to game jam.
-                        </p>
-                    </div>
-                </div>
-
-               <div class="card px-0">
-                    <div class="card-body px-0">
-                        <h5 class="card-title">
-                            <a href="approaching-game-design-as-an-educator.html">
-                                Approaching game design as an educator
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            Game design and education have some things in common.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card px-0">
-                    <div class="card-body px-0">
-                        <h5 class="card-title">
-                            <a href="how-to-develop-an-effective-game.html">
-                                How to develop an effective game
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            (C.R.A.F.T) Challenge, research, accessibility, feedback, testing.
-                        </p>
-                    </div>
-                </div>
-
+          <article
+            class="card px-0"
+            role="region"
+            aria-label="Interview with Akzidenz"
+          >
+            <div class="card-body px-0">
+              <h5 class="card-title fw-bold">
+                <a href="akzidenz.html">Akzidenz</a>
+              </h5>
+              <p class="card-text">
+                Indie game dev and co-host of 20 Second Game Jam.
+              </p>
             </div>
+          </article>
+        </section>
 
-            <div class="col-12 col-md-6 col-lg-3">
+        <!-- Post-mortems section -->
+        <section
+          class="col-12 col-md-6 col-lg-3 mb-3"
+          aria-labelledby="post-mortems"
+        >
+          <h2 class="display-6" id="post-mortems">Post-mortems</h2>
 
-                <p class="display-6" id="misc">
-                    Miscellaneous
-                </p>
-
-                <div class="card px-0">
-                    <div class="card-body px-0">
-                        <h5 class="card-title">
-                            <a href="will-to-system.html">
-                                Will to system
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            The will to a system is a lack of integrity.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card px-0">
-                    <div class="card-body px-0">
-                        <h5 class="card-title">
-                            <a href="privacy-and-democracy.html">
-                                Privacy and democracy
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            Privacy is the cornerstone of a democratic society.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card px-0">
-                    <div class="card-body px-0">
-                        <h5 class="card-title">
-                            <a href="beyond-vulgar.html">
-                                Beyond vulgar
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            One must be a sea, to receive a dirty stream without becoming unclean.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card px-0">
-                    <div class="card-body px-0">
-                        <h5 class="card-title">
-                            <a href="psychology.html">
-                                Psychology (Update: Catharsis)
-                            </a>
-                        </h5>
-                        <p class="card-text">
-                            Improve yourself and others with the help of psychology.
-                        </p>
-                    </div>
-                </div>
+          <article
+            class="card px-0"
+            role="region"
+            aria-label="Post-mortem: Zodiac Ranger III"
+          >
+            <div class="card-body px-0">
+              <h5 class="card-title fw-bold">
+                <a href="zodiac-ranger-iii.html">Zodiac Ranger III</a>
+              </h5>
+              <p class="card-text">
+                Pilot spaceship and eliminate hostiles before ship
+                self-destructs.
+              </p>
             </div>
+          </article>
 
-        </div>
+          <article
+            class="card px-0"
+            role="region"
+            aria-label="Post-mortem: Who opened the hatch?"
+          >
+            <div class="card-body px-0">
+              <h5 class="card-title fw-bold">
+                <a href="who-opened-the-hatch.html">Who opened the hatch?</a>
+              </h5>
+              <p class="card-text">
+                Pilot spaceship and rescue astronauts before oxygen runs out.
+              </p>
+            </div>
+          </article>
 
-</body>
+          <article
+            class="card px-0"
+            role="region"
+            aria-label="Post-mortem: Ten Jumps"
+          >
+            <div class="card-body px-0">
+              <h5 class="card-title fw-bold">
+                <a href="ten-jumps.html">Ten Jumps</a>
+              </h5>
+              <p class="card-text">
+                You have only ten jumps in this platformer.
+              </p>
+            </div>
+          </article>
 
-<footer-nav></footer-nav>
+          <article
+            class="card px-0"
+            role="region"
+            aria-label="Post-mortem: Temposition"
+          >
+            <div class="card-body px-0">
+              <h5 class="card-title fw-bold">
+                <a href="temposition.html">Temposition</a>
+              </h5>
+              <p class="card-text">
+                A rhythm based platformer with flashy lights and colours.
+              </p>
+            </div>
+          </article>
 
+          <article
+            class="card px-0"
+            role="region"
+            aria-label="Post-mortem: Blazing Bounce"
+          >
+            <div class="card-body px-0">
+              <h5 class="card-title fw-bold">
+                <a href="blazing-bounce.html">Blazing Bounce</a>
+              </h5>
+              <p class="card-text">
+                Help rescue people from burning apartments.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="card px-0"
+            role="region"
+            aria-label="Post-mortem: Rainy Rhythm"
+          >
+            <div class="card-body px-0">
+              <h5 class="card-title fw-bold">
+                <a href="rainy-rhythm.html">Rainy Rhythm</a>
+              </h5>
+              <p class="card-text">
+                A rhythm based game with focus on relaxation.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="card px-0"
+            role="region"
+            aria-label="Post-mortem: Trend Surfer"
+          >
+            <div class="card-body px-0">
+              <h5 class="card-title fw-bold">
+                <a href="trend-surfer.html">Trend Surfer</a>
+              </h5>
+              <p class="card-text">2D platformer game with a chain reaction.</p>
+            </div>
+          </article>
+
+          <article
+            class="card px-0"
+            role="region"
+            aria-label="Post-mortem: Hyper"
+          >
+            <div class="card-body px-0">
+              <h5 class="card-title fw-bold">
+                <a href="hyper.html">Hyper</a>
+              </h5>
+              <p class="card-text">
+                Shoot down the hostile ships in this 2D top down game.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <!-- Game design section -->
+        <section
+          class="col-12 col-md-6 col-lg-3 mb-3"
+          aria-labelledby="gamedesign"
+        >
+          <h2 class="display-6" id="gamedesign">Game design</h2>
+
+          <article
+            class="card px-0"
+            role="region"
+            aria-label="Game design: Participate in game jams"
+          >
+            <div class="card-body px-0">
+              <h5 class="card-title fw-bold">
+                <a href="participate-in-game-jams.html"
+                  >Participate in game jams</a
+                >
+              </h5>
+              <p class="card-text">Beginners are encouraged to game jam.</p>
+            </div>
+          </article>
+
+          <article
+            class="card px-0"
+            role="region"
+            aria-label="Game design: Approaching game design as an educator"
+          >
+            <div class="card-body px-0">
+              <h5 class="card-title fw-bold">
+                <a href="approaching-game-design-as-an-educator.html"
+                  >Approaching game design as an educator</a
+                >
+              </h5>
+              <p class="card-text">
+                Game design and education have some things in common.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="card px-0"
+            role="region"
+            aria-label="Game design: How to develop an effective game"
+          >
+            <div class="card-body px-0">
+              <h5 class="card-title fw-bold">
+                <a href="how-to-develop-an-effective-game.html"
+                  >How to develop an effective game</a
+                >
+              </h5>
+              <p class="card-text">
+                (C.R.A.F.T) Challenge, research, accessibility, feedback,
+                testing.
+              </p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </div>
+
+    <footer role="contentinfo" aria-label="Footer navigation">
+      <footer-nav></footer-nav>
+    </footer>
+  </body>
 </html>

@@ -2,9 +2,16 @@
     --bs-body-bg: rgb(245, 245, 247);
 }
 
+
 .navbar {
     --bs-navbar-toggler-border-color: none;
     --bs-navbar-toggler-focus-width: none;
+} 
+
+
+.navbar-toggler:focus {
+  outline: 2px solid rgba(13, 110, 253, 1);  
+  /*outline-offset: 2px;*/
 }
 
 .overflow-x {

@@ -8,10 +8,8 @@ class MyHeader extends HTMLElement {
             
             <a href="./" class="navbar-brand" aria-current="page">
                 
-                
-                
                 <h1 class="text-start m-0" aria-hidden="true">
-                    Aditya
+                    Epicsteme
                 </h1>
                 
             </a>

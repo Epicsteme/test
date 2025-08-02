@@ -81,3 +81,7 @@ video {
     text-decoration-line: underline;
     text-decoration-color: initial;
 }
+
+.max-width-90{
+    max-width: 90%;
+}

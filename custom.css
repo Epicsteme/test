@@ -49,18 +49,6 @@ p {
     font-weight: 400;
 }
 
-video {
-    display: block;
-}
-
-.text-violet {
-    color: rgb(238, 130, 238);
-}
-
-.text-indigo {
-    color: rgb(75, 0, 130);
-}
-
 .text-blue {
     color: rgb(0, 0, 255);
 }

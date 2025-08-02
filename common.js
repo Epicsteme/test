@@ -4,11 +4,11 @@ class MyHeader extends HTMLElement {
     this.innerHTML = `
     <header id="header">
         
-        <nav class="navbar navbar-expand-lg m-0" aria-label="Primary navigation">
+        <nav class="navbar navbar-expand-lg py-0 mx-0 my-0" aria-label="Primary navigation">
             
             <a href="./" class="navbar-brand" aria-current="page">
                 
-                <h1 class="text-start m-0" aria-hidden="true">
+                <h1 class="text-start" aria-hidden="true">
                     Epicsteme
                 </h1>
                 

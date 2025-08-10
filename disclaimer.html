@@ -17,7 +17,11 @@
     <title>Disclaimer</title>
   </head>
   <body>
-    <main class="container-lg" role="main" aria-labelledby="disclaimer-heading">
+    <main
+      class="container-lg vh-100 d-flex flex-column"
+      role="main"
+      aria-labelledby="disclaimer-heading"
+    >
       <my-header role="banner" aria-label="Site Header"></my-header>
 
       <div class="container-fluid">
@@ -43,8 +47,11 @@
           </ol>
         </div>
       </div>
+      <footer-nav
+        class="mt-auto"
+        role="contentinfo"
+        aria-label="Site Footer"
+      ></footer-nav>
     </main>
-
-    <footer-nav role="contentinfo" aria-label="Site Footer"></footer-nav>
   </body>
 </html>

@@ -1,75 +1,136 @@
 :root {
-    --bs-body-bg: rgb(245, 245, 247);
+  --bs-body-bg: rgb(245, 245, 247);
 }
 
-
 .navbar {
-    --bs-navbar-toggler-border-color: none;
-    --bs-navbar-toggler-focus-width: none;
-} 
-
+  --bs-navbar-toggler-border-color: none;
+  --bs-navbar-toggler-focus-width: none;
+}
 
 .navbar-toggler:focus {
-  outline: 2px solid rgba(13, 110, 253, 1);  
+  outline: 2px solid rgba(13, 110, 253, 1);
   /*outline-offset: 2px;*/
 }
 
 .overflow-x {
-    overflow-x: scroll;
-    white-space: nowrap;
+  overflow-x: scroll;
+  white-space: nowrap;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+.grey {
+    color: grey;
 }
 
 p {
-    color: black;
+  color: black;
 }
 
 .scrolly {
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 .card {
-    --bs-card-border-width: 0px;
-    /*outline: 1px solid rgb(237, 237, 240);*/
-    background-color: none;
-    background: none;
+  --bs-card-border-width: 0px;
+  /*outline: 1px solid rgb(237, 237, 240);*/
+  background-color: none;
+  background: none;
 }
 
 .card-title {
-    text-decoration: none;
-    font-weight: 400;
+  text-decoration: none;
+  font-weight: 400;
 }
 
 .card-subtitle {
-    text-decoration: none;
-    color: rgb(108, 117, 125);
-    font-weight: 400;
+  text-decoration: none;
+  color: rgb(108, 117, 125);
+  font-weight: 400;
 }
 
 .text-blue {
-    color: rgb(0, 0, 255);
+  color: rgb(0, 0, 255);
 }
 
 .text-green {
-    color: rgb(0, 128, 0);
+  color: rgb(0, 128, 0);
 }
 
 .text-yellow {
-    color: orange
+  color: orange;
 }
 
 .text-orange {
-    color: rgb(255, 100, 0);
+  color: rgb(255, 100, 0);
 }
 
-.hover-underline:hover{
-    text-decoration-line: underline;
-    text-decoration-color: initial;
+.hover-underline:hover {
+  text-decoration-line: underline;
+  text-decoration-color: initial;
 }
 
-.max-width-90{
-    max-width: 90%;
+.max-width-90 {
+  max-width: 90%;
+}
+
+.homebody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.homecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /*position: relative;
+    top: -10px;*/
+}
+
+.homeintro {
+  font-size: clamp(2rem, 5vw, 4rem);
+    /*Min: 2rem → the smallest the font will ever be (on tiny screens).
+    Preferred: 5vw → scales based on viewport width (vw = viewport width unit).
+    1vw = 1% of the viewport’s width.
+    So, 5vw means “make the font size 5% of the current window width.”
+    Max: 5rem → the largest it will ever be (on wide screens).*/
+  margin: 0;
+  /*font-weight: 400;*/
+  color: black;
+  /*color: #777;*/
+
+  white-space: nowrap;  /* keeps it on one line */
+}
+
+.homeintroname {
+  color: black;
+  /* #007bff; /* blue name */
+  font-weight: 700;
+}
+
+.homelinks {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.homelinks a {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+/* Responsive: vertical links on narrow screens */
+@media (max-width: 600px) {
+  .homelinks {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

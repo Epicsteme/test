@@ -101,7 +101,7 @@ p {
     So, 5vw means “make the font size 5% of the current window width.”
     Max: 5rem → the largest it will ever be (on wide screens).*/
   margin: 0;
-  /*font-weight: 400;*/
+  font-weight: 400;
   color: black;
   /*color: #777;*/
 
@@ -138,7 +138,7 @@ p {
 /* Carousel */
 .carousel {
   font-size: x-large;
-  height: 2em;           /* one line visible */
+  height: 2em; 
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -163,4 +163,6 @@ p {
   80%  { content: "Indie Game Dev"; }
   100% { content: "Teacher"; }
 }
+
+
 

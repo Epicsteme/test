@@ -131,7 +131,7 @@ p {
 @media (max-width: 600px) {
   .homelinks {
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
   }
 }
 

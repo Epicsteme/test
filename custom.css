@@ -159,10 +159,10 @@ p {
 
 @keyframes changeText {
   0%   { content: "Teacher"; }
-  20%  { content: "Indie Game Developer"; }
-  40%  { content: "Amateur Artist"; }
-  60%  { content: "Amateur Writer"; }
-  80%  { content: "Amateur Philosopher"; }
+  20%  { content: "Amateur Artist"; }
+  40%  { content: "Amateur Writer"; }
+  60%  { content: "Amateur Philosopher"; }
+  80%  { content: "Indie Game Developer"; }
   100% { content: "Teacher"; }
 }
 

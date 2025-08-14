@@ -137,14 +137,13 @@ p {
 
 /* Carousel */
 .carousel {
-  font-size: x-large;
+  /*font-size: 2rem;*/
   height: 2em; 
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  
   /* Define titles here as a space-separated list */
   /*--titles: "Teacher" "Amateur Artist" "Amateur Writer" "Amateur Philosopher" "Indie Game Dev" ;*/
   --count: 5; /* number of titles */

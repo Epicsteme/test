@@ -21,9 +21,6 @@ a {
   text-decoration: none;
 }
 
-.grey {
-  color: grey;
-}
 
 p {
   color: black;
@@ -114,6 +111,12 @@ p {
   font-weight: 700;
 }
 
+
+.hometitles{
+  color: grey;
+  font-weight: 400;
+}
+
 .homelinks {
   display: flex;
   gap: 30px;
@@ -137,7 +140,7 @@ p {
 
 /* Carousel */
 .carousel {
-  /*font-size: 2rem;*/
+  /*font-size: 1rem;*/
   height: 2em; 
   overflow: hidden;
   display: flex;

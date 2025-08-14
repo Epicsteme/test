@@ -22,7 +22,7 @@ a {
 }
 
 .grey {
-    color: grey;
+  color: grey;
 }
 
 p {
@@ -95,7 +95,7 @@ p {
 
 .homeintro {
   font-size: clamp(2rem, 5vw, 4rem);
-    /*Min: 2rem → the smallest the font will ever be (on tiny screens).
+  /*Min: 2rem → the smallest the font will ever be (on tiny screens).
     Preferred: 5vw → scales based on viewport width (vw = viewport width unit).
     1vw = 1% of the viewport’s width.
     So, 5vw means “make the font size 5% of the current window width.”
@@ -105,7 +105,7 @@ p {
   color: black;
   /*color: #777;*/
 
-  white-space: nowrap;  /* keeps it on one line */
+  white-space: nowrap; /* keeps it on one line */
 }
 
 .homeintroname {
@@ -134,3 +134,32 @@ p {
     gap: 10px;
   }
 }
+
+/* Carousel */
+.carousel {
+  font-size: x-large;
+  height: 2em;           /* one line visible */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+  /* Define titles here as a space-separated list */
+  --titles: "Teacher" "Amateur Artist" "Amateur Writer" "Game Designer" "Game Developer";
+  --count: 5; /* number of titles */
+}
+
+.carousel::before {
+  content: "";
+  animation: changeText calc(var(--count) * 1.5s) steps(var(--count)) infinite;
+}
+
+@keyframes changeText {
+  0%   { content: "Teacher"; }
+  25%  { content: "Amateur Artist"; }
+  50%  { content: "Amateur Writer"; }
+  75%  { content: "Indie Game Dev"; }
+  100% { content: "Teacher"; }
+}
+

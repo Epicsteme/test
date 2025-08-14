@@ -146,7 +146,7 @@ p {
   position: relative;
   
   /* Define titles here as a space-separated list */
-  --titles: "Teacher" "Amateur Artist" "Amateur Writer" "Game Designer" "Game Developer";
+  /*--titles: "Teacher" "Amateur Artist" "Amateur Writer" "Amateur Philosopher" "Indie Game Dev" ;*/
   --count: 5; /* number of titles */
 }
 
@@ -157,9 +157,10 @@ p {
 
 @keyframes changeText {
   0%   { content: "Teacher"; }
-  25%  { content: "Amateur Artist"; }
-  50%  { content: "Amateur Writer"; }
-  75%  { content: "Indie Game Dev"; }
+  20%  { content: "Amateur Artist"; }
+  40%  { content: "Amateur Writer"; }
+  60%  { content: "Amateur Philosopher"; }
+  80%  { content: "Indie Game Dev"; }
   100% { content: "Teacher"; }
 }
 

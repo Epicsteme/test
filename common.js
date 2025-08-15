@@ -1,21 +1,3 @@
-// Show content only after fonts are loaded
-document.documentElement.classList.add('fonts-loading');
-
-function showContentAfterFonts() {
-  document.documentElement.classList.remove('fonts-loading');
-  document.documentElement.classList.add('fonts-loaded');
-}
-
-if ('fonts' in document) {
-  // Wait for all fonts to be loaded
-  document.fonts.ready.then(showContentAfterFonts);
-  // Optionally, add a timeout fallback (e.g., 3 seconds)
-  setTimeout(showContentAfterFonts, 3000);
-} else {
-  // If Font Loading API not supported, show content after DOMContentLoaded
-  window.addEventListener('DOMContentLoaded', showContentAfterFonts);
-}
-
 //add header navigation
 class MyHeader extends HTMLElement {
   connectedCallback() {

@@ -91,7 +91,7 @@ p {
 }
 
 .homeintro {
-  font-size: clamp(4rem, 5vw, 6rem);
+  font-size: clamp(3rem, 5vw, 5rem);
   /*Min: 2rem → the smallest the font will ever be (on tiny screens).
     Preferred: 5vw → scales based on viewport width (vw = viewport width unit).
     1vw = 1% of the viewport’s width.

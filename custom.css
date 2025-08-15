@@ -83,15 +83,10 @@ p {
   height: 100vh;
   text-align: center;
 
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.33s ease-in;
+
 }
 
-.homebody.visible {
-  visibility: visible;
-  opacity: 1;
-}
+
 
 
 .homecontainer {
@@ -116,33 +111,21 @@ p {
   /*color: #777;*/
 
   white-space: nowrap; /* keeps it on one line */
+
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.33s ease-in;
+}
+
+.homeintro.visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .homeintroname {
   color: black;
   /* #007bff; /* blue name */
   font-weight: 700;
-}
-
-.homelinks {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.homelinks a {
-  text-decoration: none;
-  font-weight: normal;
-  font-size: 1rem;
-}
-
-/* Responsive: vertical links on narrow screens */
-@media (max-width: 600px) {
-  .homelinks {
-    flex-direction: column;
-    gap: 30px;
-  }
 }
 
 /* Carousel */
@@ -159,6 +142,15 @@ p {
   /* Define titles here as a space-separated list */
   /*--titles: "Teacher" "Amateur Artist" "Amateur Writer" "Amateur Philosopher" "Indie Game Dev" ;*/
   --count: 5; /* number of titles */
+
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.33s ease-in;
+}
+
+.hometitles.visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .hometitles::before {
@@ -186,3 +178,34 @@ p {
     content: "Artist";
   }
 }
+
+.homelinks {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.33s ease-in;
+}
+
+.homelinks.visible {
+  visibility: visible;
+  opacity: 1;
+}
+.homelinks a {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+/* Responsive: vertical links on narrow screens */
+@media (max-width: 600px) {
+  .homelinks {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+

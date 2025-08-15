@@ -112,10 +112,6 @@ p {
 }
 
 
-.hometitles{
-  color: grey;
-  font-weight: 400;
-}
 
 .homelinks {
   display: flex;
@@ -139,8 +135,10 @@ p {
 }
 
 /* Carousel */
-.carousel {
+.hometitles {
   /*font-size: 1rem;*/
+  color: grey;
+  font-weight: 400;
   height: 2em; 
   overflow: hidden;
   display: flex;
@@ -152,18 +150,18 @@ p {
   --count: 5; /* number of titles */
 }
 
-.carousel::before {
+.hometitles::before {
   content: "";
   animation: changeText calc(var(--count) * 1.5s) steps(var(--count)) infinite;
 }
 
 @keyframes changeText {
-  0%   { content: "Teacher"; }
-  20%  { content: "Amateur Artist"; }
-  40%  { content: "Amateur Writer"; }
+  0%   { content: "Amateur Artist"; }
+  20%  { content: "Amateur Writer"; }
+  40%  { content: "Teacher Educator"; }
   60%  { content: "Amateur Philosopher"; }
   80%  { content: "Indie Game Developer"; }
-  100% { content: "Teacher"; }
+  100% { content: "Amateur Artist"; }
 }
 
 

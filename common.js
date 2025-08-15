@@ -114,3 +114,13 @@ class SiteAssets extends HTMLElement {
 
 // Implement function to load Bootstrap assets
 customElements.define("site-assets", SiteAssets);
+
+// Wait until fonts are loaded
+if (document.fonts) {
+    document.fonts.ready.then(function() {
+        document.body.classList.add('fonts-loaded');
+    });
+} else {
+    // Fallback for older browsers: show immediately
+    document.body.classList.add('fonts-loaded');
+}

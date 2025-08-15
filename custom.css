@@ -84,12 +84,6 @@ p {
   text-align: center;
 }
 
-/* Preload state hides everything immediately */
-body.preload .fade-content {
-  opacity: 0;
-  visibility: hidden;
-}
-
 .homecontainer {
   display: flex;
   flex-direction: column;

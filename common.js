@@ -117,10 +117,6 @@ customElements.define("site-assets", SiteAssets);
 
 // Wait until the page loads to show index page content
 window.addEventListener('load', () => {
-
-    // Remove preload class so CSS transitions can run
-    document.body.classList.remove('preload');
-
     // Fade in homeintro after 0.5 seconds (500 ms) 
     setTimeout(() => {
         document.getElementById('homeintro').classList.add('visible');

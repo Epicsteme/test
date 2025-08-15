@@ -2,6 +2,14 @@
   --bs-body-bg: rgb(245, 245, 247);
 }
 
+/* Hide main content until fonts are loaded */
+.fonts-loading #main-content {
+  display: none !important;
+}
+.fonts-loaded #main-content {
+  display: block !important;
+}
+
 .navbar {
   --bs-navbar-toggler-border-color: none;
   --bs-navbar-toggler-focus-width: none;

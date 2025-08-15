@@ -63,6 +63,10 @@ p {
   color: rgb(255, 100, 0);
 }
 
+.text-black {
+  color: black;
+}
+
 .hover-underline:hover {
   text-decoration-line: underline;
   text-decoration-color: initial;
@@ -109,8 +113,6 @@ p {
   /* #007bff; /* blue name */
   font-weight: 700;
 }
-
-
 
 .homelinks {
   display: flex;

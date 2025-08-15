@@ -115,12 +115,10 @@ class SiteAssets extends HTMLElement {
 // Implement function to load Bootstrap assets
 customElements.define("site-assets", SiteAssets);
 
-// Wait until fonts are loaded
-if (document.fonts) {
-    document.fonts.ready.then(function() {
-        document.body.classList.add('fonts-loaded');
-    });
-} else {
-    // Fallback for older browsers: show immediately
-    document.body.classList.add('fonts-loaded');
-}
+// Wait until the page loads to show index page content
+window.addEventListener('load', () => {
+    // Delay 1.5 seconds (1500 ms) before showing content
+    setTimeout(() => {
+        document.body.classList.add('visible');
+    }, 1500);
+});

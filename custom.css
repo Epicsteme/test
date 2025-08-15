@@ -82,14 +82,17 @@ p {
   align-items: center;
   height: 100vh;
   text-align: center;
+
   visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.33s ease-in;
 }
 
-.homebody.fonts-loaded {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.3s ease;
+.homebody.visible {
+  visibility: visible;
+  opacity: 1;
 }
+
 
 .homecontainer {
   display: flex;

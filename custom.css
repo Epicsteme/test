@@ -1,3 +1,5 @@
+
+
 :root {
   --bs-body-bg: rgb(245, 245, 247);
 }
@@ -82,12 +84,13 @@ p {
   align-items: center;
   height: 100vh;
   text-align: center;
-
-
 }
 
-
-
+/* Preload state hides everything immediately */
+body.preload .fade-content {
+    opacity: 0;
+    visibility: hidden;
+}
 
 .homecontainer {
   display: flex;
@@ -112,14 +115,6 @@ p {
 
   white-space: nowrap; /* keeps it on one line */
 
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.33s ease-in;
-}
-
-.homeintro.visible {
-  visibility: visible;
-  opacity: 1;
 }
 
 .homeintroname {
@@ -143,14 +138,7 @@ p {
   /*--titles: "Teacher" "Amateur Artist" "Amateur Writer" "Amateur Philosopher" "Indie Game Dev" ;*/
   --count: 5; /* number of titles */
 
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.33s ease-in;
-}
 
-.hometitles.visible {
-  visibility: visible;
-  opacity: 1;
 }
 
 .hometitles::before {
@@ -184,16 +172,8 @@ p {
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
- 
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.33s ease-in;
 }
 
-.homelinks.visible {
-  visibility: visible;
-  opacity: 1;
-}
 .homelinks a {
   text-decoration: none;
   font-weight: normal;
@@ -208,4 +188,13 @@ p {
   }
 }
 
+.fade-content {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.33s ease-in;
+}
 
+.fade-content.visible {
+  visibility: visible;
+  opacity: 1;
+}

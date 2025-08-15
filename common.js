@@ -124,12 +124,12 @@ window.addEventListener('load', () => {
     // Fade in homeintro after 0.5 seconds (500 ms) 
     setTimeout(() => {
         document.getElementById('homeintro').classList.add('visible');
-    }, 500);
+    }, 1000);
 
     // Fade in hometitles after 1.0 seconds (1000 ms) 
     setTimeout(() => {
         document.getElementById('hometitles').classList.add('visible');
-    }, 1500);
+    }, 2000);
 
     // Fade in homelinks after 1.5 seconds (1500 ms) 
     setTimeout(() => {

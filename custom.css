@@ -157,8 +157,8 @@ p {
 
 @keyframes changeText {
   0%   { content: "Artist"; }
-  20%  { content: "Amateur Writer"; }
-  40%  { content: "Teacher Educator"; }
+  20%  { content: "Educator"; }
+  40%  { content: "Amateur Writer"; }
   60%  { content: "Amateur Philosopher"; }
   80%  { content: "Indie Game Developer"; }
   100% { content: "Artist"; }

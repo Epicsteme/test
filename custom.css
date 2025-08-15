@@ -21,7 +21,6 @@ a {
   text-decoration: none;
 }
 
-
 p {
   color: black;
 }
@@ -139,7 +138,7 @@ p {
   /*font-size: 1rem;*/
   color: grey;
   font-weight: 400;
-  height: 2em; 
+  height: 2em;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -156,13 +155,22 @@ p {
 }
 
 @keyframes changeText {
-  0%   { content: "Artist"; }
-  20%  { content: "Educator"; }
-  40%  { content: "Amateur Writer"; }
-  60%  { content: "Amateur Philosopher"; }
-  80%  { content: "Indie Game Developer"; }
-  100% { content: "Artist"; }
+  0% {
+    content: "Artist";
+  }
+  20% {
+    content: "Educator";
+  }
+  40% {
+    content: "Amateur Writer";
+  }
+  60% {
+    content: "Amateur Philosopher";
+  }
+  80% {
+    content: "Indie Game Developer";
+  }
+  100% {
+    content: "Artist";
+  }
 }
-
-
-

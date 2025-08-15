@@ -129,10 +129,10 @@ window.addEventListener('load', () => {
     // Fade in hometitles after 1.0 seconds (1000 ms) 
     setTimeout(() => {
         document.getElementById('hometitles').classList.add('visible');
-    }, 1000);
+    }, 2000);
 
     // Fade in homelinks after 1.5 seconds (1500 ms) 
     setTimeout(() => {
         document.getElementById('homelinks').classList.add('visible');
-    }, 2000);
+    }, 3500);
 });

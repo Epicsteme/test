@@ -86,8 +86,8 @@ p {
 
 /* Preload state hides everything immediately */
 body.preload .fade-content {
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .homecontainer {
@@ -112,7 +112,6 @@ body.preload .fade-content {
   /*color: #777;*/
 
   white-space: nowrap; /* keeps it on one line */
-
 }
 
 .homeintroname {
@@ -135,33 +134,31 @@ body.preload .fade-content {
   /* Define titles here as a space-separated list */
   /*--titles: "Teacher" "Amateur Artist" "Amateur Writer" "Amateur Philosopher" "Indie Game Dev" ;*/
   --count: 5; /* number of titles */
-
-
 }
 
 .hometitles::before {
   content: "";
-  animation: changeText calc(var(--count) * 1.5s) steps(var(--count)) infinite;
+  animation: changeText calc(var(--count) * 2s) steps(var(--count)) infinite;
 }
 
 @keyframes changeText {
   0% {
-    content: "Artist";
-  }
-  20% {
-    content: "Educator";
-  }
-  40% {
-    content: "Amateur Writer";
-  }
-  60% {
-    content: "Amateur Philosopher";
-  }
-  80% {
     content: "Indie Game Developer";
   }
-  100% {
+  20% {
     content: "Artist";
+  }
+  40% {
+    content: "Educator";
+  }
+  60% {
+    content: "Amateur Writer";
+  }
+  80% {
+    content: "Amateur Philosopher";
+  }
+  100% {
+    content: "Indie Game Developer";
   }
 }
 
@@ -187,9 +184,9 @@ body.preload .fade-content {
 }
 
 .fade-content {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.33s ease-in;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.33s ease-in;
 }
 
 .fade-content.visible {

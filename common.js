@@ -8,7 +8,7 @@ class MyHeader extends HTMLElement {
             
             <a href="./" class="navbar-brand" aria-current="page">
                 
-                <h1 class="text-start" aria-hidden="true">
+                <h1 class="text-start hover-underline" aria-hidden="true">
                     Epicsteme
                 </h1>
                 
@@ -20,23 +20,23 @@ class MyHeader extends HTMLElement {
 
             <div class="collapse navbar-collapse" id="toggleMobileMenu">
                 <ul class="navbar-nav ms-auto" role="menubar">
-                    <li class="ms-3" role="none">
-                        <a class="nav-link" href="./" role="menuitem"> Home </a>
+                    <li class="ms-3 mb-3" role="none">
+                        <a class="text-black hover-underline" href="./" role="menuitem"> Home </a>
                     </li>
-                    <li class="ms-3" role="none">
-                        <a class="nav-link" href="blog.html" role="menuitem"> Blog </a>
+                    <li class="ms-3 mb-3" role="none">
+                        <a class="text-black hover-underline" href="blog.html" role="menuitem"> Blog </a>
                     </li>
-                    <li class="ms-3" role="none">
-                        <a class="nav-link" href="literature.html" role="menuitem"> Literature </a>
+                    <li class="ms-3 mb-3" role="none">
+                        <a class="text-black hover-underline" href="literature.html" role="menuitem"> Literature </a>
                     </li>
-                    <li class="ms-3" role="none">
-                        <a class="nav-link" href="3d-models.html" role="menuitem"> 3D Models </a>
+                    <li class="ms-3 mb-3" role="none">
+                        <a class="text-black hover-underline" href="3d-models.html" role="menuitem"> 3D Models </a>
                     </li>
-                    <li class="ms-3" role="none">
-                        <a class="nav-link" href="https://pikonparadox.itch.io/" target="_blank" rel="noopener noreferrer" role="menuitem"> Games </a>
+                    <li class="ms-3 mb-3" role="none">
+                        <a class="text-black hover-underline" href="https://pikonparadox.itch.io/" target="_blank" rel="noopener noreferrer" role="menuitem"> Games </a>
                     </li>
-                    <li class="ms-3" role="none">
-                        <a class="nav-link" href="about.html" role="menuitem"> About </a>
+                    <li class="ms-3 mb-3" role="none">
+                        <a class="text-black hover-underline" href="about.html" role="menuitem"> About </a>
                     </li>
                 </ul>
             </div>
@@ -59,12 +59,12 @@ class FooterNav extends HTMLElement {
     <hr class="container-lg">
     <nav aria-label="Footer site links">
         <ul class="list-inline mb-0" role="menubar">
-            <li class="list-inline-item" role="link"><a class="text-black hover-underline" href="./" role="menuitem">Home</a></li>
-            <li class="list-inline-item" role="link"><a class="text-black hover-underline" href="blog.html" role="menuitem">Blog</a></li>
-            <li class="list-inline-item" role="link"><a class="text-black hover-underline" href="literature.html" role="menuitem">Literature</a></li>
-            <li class="list-inline-item" role="link"><a class="text-black hover-underline" href="3d-models.html" role="menuitem">3D Models</a></li>
-            <li class="list-inline-item" role="link"><a class="text-black hover-underline" href="https://pikonparadox.itch.io/" target="_blank" rel="noopener noreferrer" role="menuitem">Games</a></li>
-            <li class="list-inline-item" role="link"><a class="text-black hover-underline" href="about.html" role="menuitem">About</a></li>
+            <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="./" role="menuitem">Home</a></li>
+            <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="blog.html" role="menuitem">Blog</a></li>
+            <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="literature.html" role="menuitem">Literature</a></li>
+            <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="3d-models.html" role="menuitem">3D Models</a></li>
+            <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="https://pikonparadox.itch.io/" target="_blank" rel="noopener noreferrer" role="menuitem">Games</a></li>
+            <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="about.html" role="menuitem">About</a></li>
         </ul>
     </nav>
 </footer>

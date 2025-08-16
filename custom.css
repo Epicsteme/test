@@ -21,8 +21,39 @@ a {
   text-decoration: none;
 }
 
+/*
+a:hover,
+a:focus,
+a:active {
+  color:  var(--bs-link-color) ; 
+}
+*/
+
 p {
   color: black;
+}
+
+.hover-underline {
+  position: relative; /* anchor is positioning context */
+  display: inline-block; /* makes width match text, not parent */
+}
+
+.hover-underline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* just under the text */
+  height: 3px;
+  width: 100%; /* matches link text width */
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s;
+  pointer-events: none;
+}
+
+.hover-underline:hover::before {
+  transform: scaleX(1);
 }
 
 .scrolly {
@@ -48,7 +79,8 @@ p {
 }
 
 .text-blue {
-  color: rgb(0, 0, 255);
+  color: #0d6efd; /*default color of links*/
+  /*color: rgb(0, 0, 255);*/
 }
 
 .text-green {
@@ -65,11 +97,6 @@ p {
 
 .text-black {
   color: black;
-}
-
-.hover-underline:hover {
-  text-decoration-line: underline;
-  text-decoration-color: initial;
 }
 
 .max-width-90 {

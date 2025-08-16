@@ -137,22 +137,22 @@ p {
 
 @keyframes changeText {
   0% {
-    content: "Indie Game Developer";
-  }
-  20% {
     content: "Artist";
   }
-  40% {
+  20% {
     content: "Educator";
   }
-  60% {
+  40% {
     content: "Amateur Writer";
   }
-  80% {
+  60% {
     content: "Amateur Philosopher";
   }
-  100% {
+  80% {
     content: "Indie Game Developer";
+  }
+  100% {
+    content: "Artist";
   }
 }
 
@@ -177,7 +177,7 @@ p {
   }
 }
 
-.fade-content {
+/*.fade-content {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.33s ease-in;
@@ -186,4 +186,4 @@ p {
 .fade-content.visible {
   visibility: visible;
   opacity: 1;
-}
+}*/

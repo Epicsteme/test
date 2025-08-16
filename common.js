@@ -115,12 +115,12 @@ class SiteAssets extends HTMLElement {
 // Implement function to load Bootstrap assets
 customElements.define("site-assets", SiteAssets);
 
-// Wait until the page loads to show index page content
+/* Wait to show index page content
 window.addEventListener('load', () => {
     // Fade in homeintro after 0.5 seconds (500 ms) 
     setTimeout(() => {
         document.getElementById('homeintro').classList.add('visible');
-    }, 500);
+    }, 300);
 
     // Fade in hometitles after 1.0 seconds (1000 ms) 
     setTimeout(() => {
@@ -130,5 +130,5 @@ window.addEventListener('load', () => {
     // Fade in homelinks after 1.5 seconds (1500 ms) 
     setTimeout(() => {
         document.getElementById('homelinks').classList.add('visible');
-    }, 3500);
-});
+    }, 300);
+});*/

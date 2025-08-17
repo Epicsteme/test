@@ -1,4 +1,4 @@
-//add header navigation
+//ADD HEADER NAVIGATION
 class MyHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -46,12 +46,12 @@ class MyHeader extends HTMLElement {
   }
 }
 
-//implement function header
+//IMPLEMENT FUNCTION HEADER
 customElements.define("my-header", MyHeader);
 
 //
 
-//add footer navigation
+//ADD FOOTER NAVIGATION
 class FooterNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -72,10 +72,10 @@ class FooterNav extends HTMLElement {
   }
 }
 
-//implement function footer
+//IMPLEMENT FUNCTION FOOTER
 customElements.define("footer-nav", FooterNav);
 
-//Load Bootstrap CSS and JS from a CDN
+//LOAD BOOTSTRAP CSS AND JS FROM A CDN
 class SiteAssets extends HTMLElement {
   connectedCallback() {
     // Add Bootstrap CSS CDN
@@ -91,7 +91,7 @@ class SiteAssets extends HTMLElement {
       document.head.appendChild(link);
     }
 
-    // Add Bootstrap JS CDN
+    // Add BOOTSTRAP JS CDN
     if (!document.getElementById("bootstrap-js-cdn")) {
       const script = document.createElement("script");
       script.id = "bootstrap-js-cdn";
@@ -112,13 +112,13 @@ class SiteAssets extends HTMLElement {
   }
 }
 
-// Implement function to load Bootstrap assets
+// IMPLEMENT FUNCTION TO LOAD BOOTSTRAP ASSETS
 customElements.define("site-assets", SiteAssets);
 
-// Wait to show index page content 
+// WAIT TO SHOW INDEX PAGE CONTENTS
 // this seems to be tied to "fade-content" and "fade-content.visible" in custom.css
 window.addEventListener("load", () => {
-  // Fade in homeintro after 0.5 seconds (500 ms)
+  // Fade in homeintro after 0.25 seconds (250 ms)
   setTimeout(() => {
     document.getElementById("homebody").classList.add("visible");
   }, 250);
@@ -128,3 +128,53 @@ window.addEventListener("load", () => {
     document.getElementById("hometitles").classList.add("visible");
   }, 2000);*/
 });
+
+//LOOP CAROUSEL OF TITLES ON HOME PAGE
+// List of titles to cycle through
+const hometitles = [
+  "Artist",
+  "Educator",
+  "Amateur Writer",
+  "Amateur Philosopher",
+  "Indie Game Developer",
+];
+
+// Configuration variables (all times in milliseconds)
+const homeTitlesFadeTime = 250; // duration of fade in/out
+const hometitlesHoldTime = 2000; // time title stays fully visible
+const homeTitlesWaitTime = 0; // time to wait before showing the next title
+
+// Select the HTML element where the titles will appear
+const titleEl = document.querySelector(".hometitles");
+
+// Update the CSS transition property based on fadeTime
+// This makes the fade duration dynamic based on our configuration
+titleEl.style.transition = `opacity ${homeTitlesFadeTime / 1000}s`;
+
+// Index to keep track of the current title in the array
+let homeTitlesIndex = 0;
+
+// Function to show the next title
+function showNextTitle() {
+  // Set the current title text
+  titleEl.textContent = hometitles[homeTitlesIndex];
+
+  // Fade in the title by setting opacity to 1
+  titleEl.style.opacity = 1;
+
+  // After the title has been visible for 'hometitlesHoldTime', start fading out
+  setTimeout(() => {
+    titleEl.style.opacity = 0; // fade out
+
+    // Wait for the fade out to finish before moving to the next title
+    setTimeout(() => {
+      // Move to the next title in the array
+      homeTitlesIndex = (homeTitlesIndex + 1) % hometitles.length;
+
+      // Wait 'homeTitlesWaitTime' before starting fade-in for the next title
+      setTimeout(showNextTitle, homeTitlesWaitTime);
+    }, homeTitlesFadeTime); // this delay matches the fade-out duration
+  }, hometitlesHoldTime); // this delay matches the hold duration
+}
+// Start the loop for cycling titles
+showNextTitle();

@@ -175,51 +175,11 @@ p {
 }
 
 .hometitles {
-  position: relative; /* lets child spans overlap in the same space */
-  height: 2em; /* fixed height so text doesn’t jump */
-  display: grid; /* use grid to center child spans */
-  place-items: center; /* centers horizontally & vertically */
-
+  opacity: 0;
+  transition: opacity 0.5s; /* default fade duration, will be overwritten by JS */
   color: grey;
   font-weight: 400;
   white-space: nowrap; /* keeps it on one line */
-}
-.hometitles span {
-  position: absolute; /* stack them directly on top of each other */
-  opacity: 0; /* start invisible */
-  animation: hometitlesfade 10s linear infinite; /* run the fade animation forever */
-}
-
-/* Each title gets a different animation-delay so they appear one after another */
-.hometitles span:nth-child(1) {
-  animation-delay: 0s;
-}
-.hometitles span:nth-child(2) {
-  animation-delay: 2s;
-}
-.hometitles span:nth-child(3) {
-  animation-delay: 4s;
-}
-.hometitles span:nth-child(4) {
-  animation-delay: 6s;
-}
-.hometitles span:nth-child(5) {
-  animation-delay: 8s;
-}
-
-/* Animation keyframes for fading titles in/out */
-@keyframes hometitlesfade {
-  0%,
-  18% {
-    opacity: 0;
-  } /* fully invisible before and after display */
-  5%,
-  15% {
-    opacity: 1;
-  } /* fade in by 5%, hold until 15% */
-  100% {
-    opacity: 0;
-  } /* remain invisible until next cycle */
 }
 
 .homelinks {
@@ -243,13 +203,13 @@ p {
   }
 }
 
-/*this bit is tied to lines 118-130 in common.js*/
+/*this bit is tied to lines 118-130 in common.js 
+it is heralded with the comment "//WAIT TO SHOW INDEX PAGE CONTENTS" */
 .fade-content {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.25s ease-in;
 }
-
 .fade-content.visible {
   visibility: visible;
   opacity: 1;

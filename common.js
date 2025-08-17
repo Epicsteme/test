@@ -115,20 +115,16 @@ class SiteAssets extends HTMLElement {
 // Implement function to load Bootstrap assets
 customElements.define("site-assets", SiteAssets);
 
-/* Wait to show index page content
-window.addEventListener('load', () => {
-    // Fade in homeintro after 0.5 seconds (500 ms) 
-    setTimeout(() => {
-        document.getElementById('homeintro').classList.add('visible');
-    }, 300);
+// Wait to show index page content 
+// this seems to be tied to "fade-content" and "fade-content.visible" in custom.css
+window.addEventListener("load", () => {
+  // Fade in homeintro after 0.5 seconds (500 ms)
+  setTimeout(() => {
+    document.getElementById("homebody").classList.add("visible");
+  }, 250);
 
-    // Fade in hometitles after 1.0 seconds (1000 ms) 
-    setTimeout(() => {
-        document.getElementById('hometitles').classList.add('visible');
-    }, 2000);
-
-    // Fade in homelinks after 1.5 seconds (1500 ms) 
-    setTimeout(() => {
-        document.getElementById('homelinks').classList.add('visible');
-    }, 300);
-});*/
+  /* Fade in hometitles after 1.0 seconds (1000 ms)
+  setTimeout(() => {
+    document.getElementById("hometitles").classList.add("visible");
+  }, 2000);*/
+});

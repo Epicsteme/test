@@ -1,3 +1,4 @@
+/*background color of all pages*/
 :root {
   --bs-body-bg: rgb(245, 245, 247);
 }
@@ -56,6 +57,7 @@ p {
   transform: scaleX(1);
 }
 
+/* adds scroller on the right side of browser so all pages look consistent */
 .scrolly {
   overflow-y: scroll;
 }
@@ -102,7 +104,28 @@ p {
 .max-width-90 {
   max-width: 90%;
 }
-
+/*
+.fadein-2s {
+  animation: 2s anim-fadein-2s ease-out;
+}
+@keyframes anim-fadein-2s {
+  0% {
+    opacity: 0;
+    /*transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    /*transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    /*transform: translateY(0%);
+  }
+}
+*/
 .homebody {
   display: flex;
   justify-content: center;
@@ -119,6 +142,16 @@ p {
   /*position: relative;
     top: -10px;*/
 }
+
+/*.hover-expand{
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+
+}
+.hover-expand:hover {
+  font-variation-settings: "wght" 582;
+  letter-spacing: 2px;
+}*/
 
 .homeintro {
   font-size: clamp(3rem, 5vw, 5rem);
@@ -141,46 +174,52 @@ p {
   font-weight: 700;
 }
 
-/* Carousel */
 .hometitles {
-  /*font-size: 1rem;*/
+  position: relative; /* lets child spans overlap in the same space */
+  height: 2em; /* fixed height so text doesn’t jump */
+  display: grid; /* use grid to center child spans */
+  place-items: center; /* centers horizontally & vertically */
+
   color: grey;
   font-weight: 400;
-  height: 2em;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  /* Define titles here as a space-separated list */
-  /*--titles: "Teacher" "Amateur Artist" "Amateur Writer" "Amateur Philosopher" "Indie Game Dev" ;*/
-  --count: 5; /* number of titles */
+  white-space: nowrap; /* keeps it on one line */
+}
+.hometitles span {
+  position: absolute; /* stack them directly on top of each other */
+  opacity: 0; /* start invisible */
+  animation: hometitlesfade 10s linear infinite; /* run the fade animation forever */
 }
 
-.hometitles::before {
-  content: "";
-  animation: changeText calc(var(--count) * 2s) steps(var(--count)) infinite;
+/* Each title gets a different animation-delay so they appear one after another */
+.hometitles span:nth-child(1) {
+  animation-delay: 0s;
+}
+.hometitles span:nth-child(2) {
+  animation-delay: 2s;
+}
+.hometitles span:nth-child(3) {
+  animation-delay: 4s;
+}
+.hometitles span:nth-child(4) {
+  animation-delay: 6s;
+}
+.hometitles span:nth-child(5) {
+  animation-delay: 8s;
 }
 
-@keyframes changeText {
-  0% {
-    content: "Artist";
-  }
-  20% {
-    content: "Educator";
-  }
-  40% {
-    content: "Amateur Writer";
-  }
-  60% {
-    content: "Amateur Philosopher";
-  }
-  80% {
-    content: "Indie Game Developer";
-  }
+/* Animation keyframes for fading titles in/out */
+@keyframes hometitlesfade {
+  0%,
+  18% {
+    opacity: 0;
+  } /* fully invisible before and after display */
+  5%,
+  15% {
+    opacity: 1;
+  } /* fade in by 5%, hold until 15% */
   100% {
-    content: "Artist";
-  }
+    opacity: 0;
+  } /* remain invisible until next cycle */
 }
 
 .homelinks {
@@ -196,7 +235,7 @@ p {
   font-size: 1rem;
 }
 
-/* Responsive: vertical links on narrow screens */
+/* homelinks - Responsive: vertical links on narrow screens */
 @media (max-width: 600px) {
   .homelinks {
     flex-direction: column;
@@ -204,13 +243,14 @@ p {
   }
 }
 
-/*.fade-content {
+/*this bit is tied to lines 118-130 in common.js*/
+.fade-content {
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.33s ease-in;
+  transition: opacity 0.25s ease-in;
 }
 
 .fade-content.visible {
   visibility: visible;
   opacity: 1;
-}*/
+}

@@ -8,7 +8,7 @@ class MyHeader extends HTMLElement {
             
             <a href="./" class="navbar-brand" aria-current="page">
                 
-                <h1 class="text-start hover-underline" aria-hidden="true">
+                <h1 class="text-start" aria-hidden="true">
                     Epicsteme
                 </h1>
                 

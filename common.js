@@ -27,7 +27,7 @@ class MyHeader extends HTMLElement {
             <div class="collapse navbar-collapse" id="toggleMobileMenu">
                 <ul class="navbar-nav ms-auto" role="menubar">
                     <li class="ms-3 mb-3" role="none">
-                        <a class="text-black hover-underline" href="index.html" role="menuitem"> Home </a>
+                        <a class="text-black hover-underline" href="./" role="menuitem"> Home </a>
                     </li>
                     <li class="ms-3 mb-3" role="none">
                         <a class="text-black hover-underline" href="/blog.html" role="menuitem"> Blog </a>

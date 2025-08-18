@@ -6,7 +6,7 @@ class MyHeader extends HTMLElement {
         
         <nav class="navbar navbar-expand-lg py-0 mx-0 my-0" aria-label="Primary navigation">
             
-            <a href="/index.html" class="navbar-brand" aria-current="page">
+            <a href="./" class="navbar-brand" aria-current="page">
                 
                 <h1 class="text-start" aria-hidden="true">
                     Epicsteme
@@ -21,22 +21,22 @@ class MyHeader extends HTMLElement {
             <div class="collapse navbar-collapse" id="toggleMobileMenu">
                 <ul class="navbar-nav ms-auto" role="menubar">
                     <li class="ms-3 mb-3" role="none">
-                        <a class="text-black hover-underline" href="/index.html" role="menuitem"> Home </a>
+                        <a class="text-black hover-underline" href="./" role="menuitem"> Home </a>
                     </li>
                     <li class="ms-3 mb-3" role="none">
-                        <a class="text-black hover-underline" href="/blog.html" role="menuitem"> Blog </a>
+                        <a class="text-black hover-underline" href="blog.html" role="menuitem"> Blog </a>
                     </li>
                     <li class="ms-3 mb-3" role="none">
-                        <a class="text-black hover-underline" href="/literature.html" role="menuitem"> Literature </a>
+                        <a class="text-black hover-underline" href="literature.html" role="menuitem"> Literature </a>
                     </li>
                     <li class="ms-3 mb-3" role="none">
-                        <a class="text-black hover-underline" href="/3d-models.html" role="menuitem"> 3D Models </a>
+                        <a class="text-black hover-underline" href="3d-models.html" role="menuitem"> 3D Models </a>
                     </li>
                     <li class="ms-3 mb-3" role="none">
                         <a class="text-black hover-underline" href="https://pikonparadox.itch.io/" target="_blank" rel="noopener noreferrer" role="menuitem"> Games </a>
                     </li>
                     <li class="ms-3 mb-3" role="none">
-                        <a class="text-black hover-underline" href="/about.html" role="menuitem"> About </a>
+                        <a class="text-black hover-underline" href="about.html" role="menuitem"> About </a>
                     </li>
                 </ul>
             </div>
@@ -59,12 +59,12 @@ class FooterNav extends HTMLElement {
     <hr class="container-lg">
     <nav aria-label="Footer site links">
         <ul class="list-inline mb-0" role="menubar">
-            <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="/index.html" role="menuitem">Home</a></li>
-            <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="/blog.html" role="menuitem">Blog</a></li>
-            <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="/literature.html" role="menuitem">Literature</a></li>
-            <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="/3d-models.html" role="menuitem">3D Models</a></li>
+            <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="./" role="menuitem">Home</a></li>
+            <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="blog.html" role="menuitem">Blog</a></li>
+            <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="literature.html" role="menuitem">Literature</a></li>
+            <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="3d-models.html" role="menuitem">3D Models</a></li>
             <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="https://pikonparadox.itch.io/" target="_blank" rel="noopener noreferrer" role="menuitem">Games</a></li>
-            <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="/about.html" role="menuitem">About</a></li>
+            <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="about.html" role="menuitem">About</a></li>
         </ul>
     </nav>
 </footer>

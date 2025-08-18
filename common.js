@@ -178,3 +178,4 @@ function showNextTitle() {
 }
 // Start the loop for cycling titles
 showNextTitle();
+

@@ -3,6 +3,25 @@
   --bs-body-bg: rgb(245, 245, 247);
 }
 
+/* Make the body a flex container with column direction */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full viewport height */
+  margin: 0; /* remove default body margin */
+}
+
+/* Make main content take all available space */
+main {
+  flex: 1 0 auto; /* grow to fill space, don't shrink below content */
+}
+
+/* Footer stays at the bottom */
+footer {
+  flex-shrink: 0; /* don't let footer shrink */
+}
+
+
 .navbar {
   --bs-navbar-toggler-border-color: none;
   --bs-navbar-toggler-focus-width: none;
@@ -127,12 +146,18 @@ p {
   }
 }
 */
+
 .homebody {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   text-align: center;
+}
+
+/* Home page main should not stretch */
+.homebody main {
+  flex: 0 0 auto; /* don’t grow or shrink, just size to content */
 }
 
 .homecontainer {
@@ -215,4 +240,64 @@ it is heralded with the comment "//WAIT TO SHOW INDEX PAGE CONTENTS" */
 .fade-content.visible {
   visibility: visible;
   opacity: 1;
+}
+
+/* Style the button to look like heading text */
+#blog-sections .toggle-btn {
+  all: unset;
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#blog-sections .toggle-btn:focus {
+  outline: 2px solid rgba(0, 0, 0, 0.6);
+  outline-offset: 3px;
+}
+
+/* Hide articles when collapsed */
+#blog-sections section[data-collapsed="true"] .articles {
+  display: none !important;
+}
+
+/*TOGGLE SHOW HIDE BLOG SECTION TITLE BUTTONS*/
+/* Make toggle buttons look like real buttons */
+#blog-sections .toggle-btn {
+  all: unset;                  /* remove default browser styles */
+  display: inline-block;
+  padding: 0.2em 0.2em;          /* vertical and horizontal padding */
+  /*font-size: 1.25rem;*/
+  font-weight: bold;
+  background-color: #007bff;   /* Bootstrap primary blue */
+  color: white;
+  border-radius: 6px;
+  /*border: 2px solid #0056b3;*/
+  cursor: pointer;
+  transition: background-color 0.25s, transform 0.15s;
+  user-select: none;
+}
+
+/* Hover effect */
+#blog-sections .toggle-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+/* Focus / accessibility outline */
+#blog-sections .toggle-btn:focus {
+  outline: 3px solid rgba(13, 110, 253, 1);
+  outline-offset: 2px;
+}
+
+/* Active / pressed effect */
+#blog-sections .toggle-btn:active {
+  background-color: #004080;
+  transform: translateY(0);
+}
+
+/* Hide articles when section is collapsed */
+#blog-sections section[data-collapsed="true"] .articles {
+  display: none !important;
 }

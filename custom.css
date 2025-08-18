@@ -37,6 +37,7 @@ p {
 .hover-underline {
   position: relative; /* anchor is positioning context */
   display: inline-block; /* makes width match text, not parent */
+  width: fit-content; /* shrink to text width on all devices */
 }
 
 .hover-underline::before {
@@ -200,6 +201,7 @@ p {
   .homelinks {
     flex-direction: column;
     gap: 30px;
+    align-items: center; /* center each link horizontally */
   }
 }
 

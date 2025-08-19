@@ -253,6 +253,8 @@ it is heralded with the comment "//WAIT TO SHOW INDEX PAGE CONTENTS" */
   cursor: pointer;
   display: inline-block;
 
+  width: 96%;
+  text-align: center;
   display: inline-block;
   padding: 4px 8px; /*0.2em 0.2em; */ /* increase touch area */
   font-weight: 700;
@@ -267,7 +269,6 @@ it is heralded with the comment "//WAIT TO SHOW INDEX PAGE CONTENTS" */
   border-radius: 8px;
   cursor: pointer;
   user-select: none;
-  text-align: center; /* restore text alignment */
   -webkit-appearance: none; /* disable default button styling on older Android */
   appearance: none;
 }

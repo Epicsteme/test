@@ -21,7 +21,6 @@ footer {
   flex-shrink: 0; /* don't let footer shrink */
 }
 
-
 .navbar {
   --bs-navbar-toggler-border-color: none;
   --bs-navbar-toggler-focus-width: none;
@@ -242,21 +241,6 @@ it is heralded with the comment "//WAIT TO SHOW INDEX PAGE CONTENTS" */
   opacity: 1;
 }
 
-/* Style the button to look like heading text */
-#blog-sections .toggle-btn {
-  all: unset;
-  cursor: pointer;
-  user-select: none;
-  display: inline-block;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-#blog-sections .toggle-btn:focus {
-  outline: 2px solid rgba(0, 0, 0, 0.6);
-  outline-offset: 3px;
-}
-
 /* Hide articles when collapsed */
 #blog-sections section[data-collapsed="true"] .articles {
   display: none !important;
@@ -265,36 +249,45 @@ it is heralded with the comment "//WAIT TO SHOW INDEX PAGE CONTENTS" */
 /*TOGGLE SHOW HIDE BLOG SECTION TITLE BUTTONS*/
 /* Make toggle buttons look like real buttons */
 #blog-sections .toggle-btn {
+  all: unset;
+  cursor: pointer;
   display: inline-block;
-  padding: 0.2em 0.2em;           /* increase touch area */
-  font-weight: bold;
-  background-color: #007bff;
-  color: white;
-  border: none;                 /* reset border */
-  border-radius: 6px;
+
+  display: inline-block;
+  padding: 4px 8px; /*0.2em 0.2em; */ /* increase touch area */
+  font-weight: 700;
+  /*background-color: #1d1d1f; */
+  background-color: #0d6efd;
+  color: rgb(
+    245,
+    245,
+    247
+  ); /* color of background as set at the top of this file*/
+  border: none; /* reset border */
+  border-radius: 8px;
   cursor: pointer;
   user-select: none;
-  text-align: center;           /* restore text alignment */
-  -webkit-appearance: none;     /* disable default button styling on older Android */
+  text-align: center; /* restore text alignment */
+  -webkit-appearance: none; /* disable default button styling on older Android */
   appearance: none;
 }
 
 /* Hover effect */
 #blog-sections .toggle-btn:hover {
-  background-color: #0056b3;
-  transform: translateY(-1px);
+  background-color: #0a58ca;
+  /* background-color: #2c2c2e;  */ /* Slightly lighter on hover */
+}
+
+/* Active / pressed effect */
+#blog-sections .toggle-btn:active {
+  background-color: #004080;
+  /*background-color: #3a3a3c;     Even lighter on press */
 }
 
 /* Focus / accessibility outline */
 #blog-sections .toggle-btn:focus {
   outline: 3px solid rgba(13, 110, 253, 1);
   outline-offset: 2px;
-}
-
-/* Active / pressed effect */
-#blog-sections .toggle-btn:active {
-  background-color: #004080;
-  transform: translateY(0);
 }
 
 /* Hide articles when section is collapsed */

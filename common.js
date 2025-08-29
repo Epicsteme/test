@@ -1,4 +1,4 @@
-//ADD HEADER NAVIGATION
+//------------ADD HEADER NAVIGATION------------
 class MyHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -46,12 +46,12 @@ class MyHeader extends HTMLElement {
   }
 }
 
-//IMPLEMENT FUNCTION HEADER
+//------------IMPLEMENT FUNCTION HEADER------------
 customElements.define("my-header", MyHeader);
 
 //
 
-//ADD FOOTER NAVIGATION
+//------------ADD FOOTER NAVIGATION------------
 class FooterNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -72,10 +72,10 @@ class FooterNav extends HTMLElement {
   }
 }
 
-//IMPLEMENT FUNCTION FOOTER
+//------------IMPLEMENT FUNCTION FOOTER------------
 customElements.define("footer-nav", FooterNav);
 
-//LOAD BOOTSTRAP CSS AND JS FROM A CDN
+//------------LOAD BOOTSTRAP CSS AND JS FROM A CDN------------
 class SiteAssets extends HTMLElement {
   connectedCallback() {
     // Add Bootstrap CSS CDN
@@ -112,10 +112,10 @@ class SiteAssets extends HTMLElement {
   }
 }
 
-// IMPLEMENT FUNCTION TO LOAD BOOTSTRAP ASSETS
+// ------------IMPLEMENT FUNCTION TO LOAD BOOTSTRAP ASSETS------------
 customElements.define("site-assets", SiteAssets);
 
-// WAIT TO SHOW INDEX PAGE CONTENTS
+// ------------WAIT TO SHOW INDEX PAGE CONTENTS------------
 // this seems to be tied to "fade-content" and "fade-content.visible" in custom.css
 window.addEventListener("load", () => {
   // Fade in homeintro after 0.25 seconds (250 ms)
@@ -129,7 +129,7 @@ window.addEventListener("load", () => {
   }, 2000);*/
 });
 
-//LOOP CAROUSEL OF TITLES ON HOME PAGE
+//------------LOOP CAROUSEL OF TITLES ON HOME PAGE------------
 // List of titles to cycle through
 const hometitles = [
   "Artist",
@@ -179,113 +179,3 @@ function showNextTitle() {
 // Start the loop for cycling titles
 showNextTitle();
 
-//SUBSCRIBE
-// URL of your Google Apps Script Web App
-// This is where all form data will be sent
-const SCRIPT_URL = "PASTE_YOUR_WEBAPP_URL_HERE";
-
-// Attach click event listeners to the Subscribe and Unsubscribe buttons
-// ?. ensures this only runs if the element exists on the page
-document.getElementById("subscribeBtn")?.addEventListener("click", subscribe);
-document.getElementById("unsubscribeBtn")?.addEventListener("click", unsubscribe);
-
-// Function to handle subscription
-function subscribe() {
-  // Get the email input field
-  const emailField = document.getElementById("email");
-
-  // Get all checkboxes with the class "category"
-  const checkboxes = document.querySelectorAll(".category");
-
-  // Object to store which categories the user selected
-  const selected = {};
-
-  // Flag to check if at least one checkbox is selected
-  let atLeastOneChecked = false;
-
-  // Loop through all checkboxes
-  checkboxes.forEach(cb => {
-    // Store "yes" if checked, "no" if not
-    selected[cb.id] = cb.checked ? "yes" : "no";
-    // Update flag if at least one is checked
-    if (cb.checked) atLeastOneChecked = true;
-  });
-
-  // Validate email field
-  if (!emailField.value) {
-    document.getElementById("response").innerText = "Please enter a valid email.";
-    return; // Stop function if email is empty
-  }
-
-  // Validate that at least one checkbox is selected
-  if (!atLeastOneChecked) {
-    document.getElementById("response").innerText = "Please select at least one category.";
-    return; // Stop function if none selected
-  }
-
-  // Create data object to send to Google Apps Script
-  const data = {
-    email: emailField.value,
-    ...selected, // Add all checkbox selections
-    action: "subscribe" // Action type for the backend
-  };
-
-  // Send subscription data to Google Apps Script
-  fetch(SCRIPT_URL, {
-    method: "POST", // Using POST to send data
-    body: JSON.stringify(data) // Convert data object to JSON string
-  })
-  .then(res => res.text()) // Read response as text
-  .then(txt => {
-    // Show success message
-    document.getElementById("response").innerText = "Subscription successful! Thank you.";
-
-    // Clear the email input field
-    emailField.value = "";
-
-    // Uncheck all checkboxes
-    checkboxes.forEach(cb => cb.checked = false);
-  })
-  .catch(err => {
-    // Handle any errors (e.g., network issues)
-    console.error(err);
-    document.getElementById("response").innerText = "An error occurred. Please try again.";
-  });
-}
-
-// Function to handle unsubscription
-function unsubscribe() {
-  // Get the unsubscribe email input field
-  const emailField = document.getElementById("unsubscribeEmail");
-
-  // Validate email input
-  if (!emailField.value) {
-    document.getElementById("response").innerText = "Please enter a valid email.";
-    return; // Stop function if empty
-  }
-
-  // Create data object for unsubscription
-  const data = {
-    email: emailField.value,
-    action: "unsubscribe" // Action type for backend
-  };
-
-  // Send unsubscribe request to Google Apps Script
-  fetch(SCRIPT_URL, {
-    method: "POST", // POST request
-    body: JSON.stringify(data) // Convert data to JSON string
-  })
-  .then(res => res.text()) // Read response as text
-  .then(txt => {
-    // Show success message
-    document.getElementById("response").innerText = "Unsubscribed successfully.";
-
-    // Clear the unsubscribe email input field
-    emailField.value = "";
-  })
-  .catch(err => {
-    // Handle any errors
-    console.error(err);
-    document.getElementById("response").innerText = "An error occurred. Please try again.";
-  });
-}

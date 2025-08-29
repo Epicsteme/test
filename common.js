@@ -179,3 +179,113 @@ function showNextTitle() {
 // Start the loop for cycling titles
 showNextTitle();
 
+//SUBSCRIBE
+// URL of your Google Apps Script Web App
+// This is where all form data will be sent
+const SCRIPT_URL = "PASTE_YOUR_WEBAPP_URL_HERE";
+
+// Attach click event listeners to the Subscribe and Unsubscribe buttons
+// ?. ensures this only runs if the element exists on the page
+document.getElementById("subscribeBtn")?.addEventListener("click", subscribe);
+document.getElementById("unsubscribeBtn")?.addEventListener("click", unsubscribe);
+
+// Function to handle subscription
+function subscribe() {
+  // Get the email input field
+  const emailField = document.getElementById("email");
+
+  // Get all checkboxes with the class "category"
+  const checkboxes = document.querySelectorAll(".category");
+
+  // Object to store which categories the user selected
+  const selected = {};
+
+  // Flag to check if at least one checkbox is selected
+  let atLeastOneChecked = false;
+
+  // Loop through all checkboxes
+  checkboxes.forEach(cb => {
+    // Store "yes" if checked, "no" if not
+    selected[cb.id] = cb.checked ? "yes" : "no";
+    // Update flag if at least one is checked
+    if (cb.checked) atLeastOneChecked = true;
+  });
+
+  // Validate email field
+  if (!emailField.value) {
+    document.getElementById("response").innerText = "Please enter a valid email.";
+    return; // Stop function if email is empty
+  }
+
+  // Validate that at least one checkbox is selected
+  if (!atLeastOneChecked) {
+    document.getElementById("response").innerText = "Please select at least one category.";
+    return; // Stop function if none selected
+  }
+
+  // Create data object to send to Google Apps Script
+  const data = {
+    email: emailField.value,
+    ...selected, // Add all checkbox selections
+    action: "subscribe" // Action type for the backend
+  };
+
+  // Send subscription data to Google Apps Script
+  fetch(SCRIPT_URL, {
+    method: "POST", // Using POST to send data
+    body: JSON.stringify(data) // Convert data object to JSON string
+  })
+  .then(res => res.text()) // Read response as text
+  .then(txt => {
+    // Show success message
+    document.getElementById("response").innerText = "Subscription successful! Thank you.";
+
+    // Clear the email input field
+    emailField.value = "";
+
+    // Uncheck all checkboxes
+    checkboxes.forEach(cb => cb.checked = false);
+  })
+  .catch(err => {
+    // Handle any errors (e.g., network issues)
+    console.error(err);
+    document.getElementById("response").innerText = "An error occurred. Please try again.";
+  });
+}
+
+// Function to handle unsubscription
+function unsubscribe() {
+  // Get the unsubscribe email input field
+  const emailField = document.getElementById("unsubscribeEmail");
+
+  // Validate email input
+  if (!emailField.value) {
+    document.getElementById("response").innerText = "Please enter a valid email.";
+    return; // Stop function if empty
+  }
+
+  // Create data object for unsubscription
+  const data = {
+    email: emailField.value,
+    action: "unsubscribe" // Action type for backend
+  };
+
+  // Send unsubscribe request to Google Apps Script
+  fetch(SCRIPT_URL, {
+    method: "POST", // POST request
+    body: JSON.stringify(data) // Convert data to JSON string
+  })
+  .then(res => res.text()) // Read response as text
+  .then(txt => {
+    // Show success message
+    document.getElementById("response").innerText = "Unsubscribed successfully.";
+
+    // Clear the unsubscribe email input field
+    emailField.value = "";
+  })
+  .catch(err => {
+    // Handle any errors
+    console.error(err);
+    document.getElementById("response").innerText = "An error occurred. Please try again.";
+  });
+}

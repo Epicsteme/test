@@ -241,15 +241,10 @@ it is heralded with the comment "//WAIT TO SHOW INDEX PAGE CONTENTS" */
   opacity: 1;
 }
 
-/* Hide articles when collapsed */
-#blog-sections section[data-collapsed="true"] .articles {
-  display: none !important;
-}
-
 /*TOGGLE SHOW HIDE BLOG SECTION TITLE BUTTONS*/
 /* Make toggle buttons look like real buttons */
 .toggle-section-btn {
-  all: unset;
+  /*all: unset;*/
   cursor: pointer;
   display: inline-block;
 
@@ -300,7 +295,7 @@ section[data-collapsed="true"] .articles {
 /*TOGGLE SHOW HIDE LITERATURE ARTICLES BUTTONS*/
 /* Make toggle buttons look like real buttons */
 .toggle-article-btn {
-  all: unset;
+  /*all: unset;*/
   cursor: pointer;
   display: inline-block;
 

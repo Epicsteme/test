@@ -28,7 +28,7 @@
         <div class="col-12 col-md-6 col-lg-3">
           <section aria-labelledby="miscellaneous">
             <h2 id="miscellaneous">
-              <button class="toggle-btn" aria-expanded="true">
+              <button class="toggle-section-btn" aria-expanded="true">
                 Miscellaneous
               </button>
             </h2>
@@ -136,7 +136,7 @@
         <div class="col-12 col-md-6 col-lg-3">
           <section aria-labelledby="interviews">
             <h2 id="interviews">
-              <button class="toggle-btn" aria-expanded="true">
+              <button class="toggle-section-btn" aria-expanded="true">
                 Interviews
               </button>
             </h2>
@@ -205,7 +205,7 @@
         <div class="col-12 col-md-6 col-lg-3">
           <section aria-labelledby="game-dev">
             <h2 id="game-dev">
-              <button class="toggle-btn" aria-expanded="true">Game Dev</button>
+              <button class="toggle-section-btn" aria-expanded="true">Game Dev</button>
             </h2>
 
             <div class="articles">
@@ -383,7 +383,7 @@
       document.addEventListener("DOMContentLoaded", () => {
         // Select all toggle buttons inside the blog sections container
         document
-          .querySelectorAll("#blog-sections .toggle-btn")
+          .querySelectorAll("#blog-sections .toggle-section-btn")
           .forEach((btn) => {
             // Find the closest parent <section> of the clicked button
             const section = btn.closest("section");

@@ -123,28 +123,6 @@ p {
 .max-width-90 {
   max-width: 90%;
 }
-/*
-.fadein-2s {
-  animation: 2s anim-fadein-2s ease-out;
-}
-@keyframes anim-fadein-2s {
-  0% {
-    opacity: 0;
-    /*transform: translateY(80%);
-  }
-  20% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-    /*transform: translateY(0%);
-  }
-  100% {
-    opacity: 1;
-    /*transform: translateY(0%);
-  }
-}
-*/
 
 .homebody {
   display: flex;
@@ -260,7 +238,7 @@ it is heralded with the comment "//WAIT TO SHOW INDEX PAGE CONTENTS" */
     247
   ); /* color of background as set at the top of this file*/
   border: none; /* reset border */
-  border-radius: 4px; 
+  border-radius: 4px;
   cursor: pointer;
   user-select: none;
   -webkit-appearance: none; /* disable default button styling on older Android */
@@ -268,16 +246,16 @@ it is heralded with the comment "//WAIT TO SHOW INDEX PAGE CONTENTS" */
 }
 
 /* Hover effect */
-#blog-sections .toggle-section-btn:hover {
+/*#blog-sections .toggle-section-btn:hover {
   /*background-color: #0a58ca;
-  /* background-color: #2c2c2e;  */ /* Slightly lighter on hover */
-}
+  /* background-color: #2c2c2e;  */ /* Slightly lighter on hover 
+}*/
 
-/* Active / pressed effect */
-#blog-sections .toggle-section-btn:active {
+/* Active / pressed effect 
+#blog-sections .toggle-section-btn:active { 
   /*background-color: #004080;
-  /*background-color: #3a3a3c;     Even lighter on press */
-}
+  /*background-color: #3a3a3c;     Even lighter on press 
+} */
 
 /* Focus / accessibility outline */
 #blog-sections .toggle-section-btn:focus {
@@ -289,7 +267,6 @@ it is heralded with the comment "//WAIT TO SHOW INDEX PAGE CONTENTS" */
 #blog-sections section[data-collapsed="true"] .articles {
   display: none !important;
 }
-
 
 /*-----TOGGLE SHOW HIDE LITERATURE SECTION TITLE BUTTONS-----*/
 /* Make toggle buttons look like real buttons */
@@ -310,7 +287,7 @@ it is heralded with the comment "//WAIT TO SHOW INDEX PAGE CONTENTS" */
     247
   ); /* color of background as set at the top of this file*/
   border: none; /* reset border */
-  border-radius: 4px; 
+  border-radius: 4px;
   cursor: pointer;
   user-select: none;
   -webkit-appearance: none; /* disable default button styling on older Android */
@@ -318,16 +295,16 @@ it is heralded with the comment "//WAIT TO SHOW INDEX PAGE CONTENTS" */
 }
 
 /* Hover effect */
-#literature-sections .toggle-section-btn:hover {
+/* #literature-sections .toggle-section-btn:hover {
   /*background-color: #0a58ca;
-  /* background-color: #2c2c2e;  */ /* Slightly lighter on hover */
-}
+  /* background-color: #2c2c2e;  */ /* Slightly lighter on hover 
+}*/
 
 /* Active / pressed effect */
-#literature-sections .toggle-section-btn:active {
+/* #literature-sections .toggle-section-btn:active {
   /*background-color: #004080;
-  /*background-color: #3a3a3c;     Even lighter on press */
-}
+  /*background-color: #3a3a3c;     Even lighter on press 
+} */
 
 /* Focus / accessibility outline */
 #literature-sections .toggle-section-btn:focus {
@@ -339,7 +316,6 @@ it is heralded with the comment "//WAIT TO SHOW INDEX PAGE CONTENTS" */
 #literature-sections section[data-collapsed="true"] .articles {
   display: none !important;
 }
-
 
 /*-----TOGGLE SHOW HIDE LITERATURE ARTICLES BUTTONS-----*/
 /* Make toggle buttons look like real buttons */
@@ -356,28 +332,27 @@ it is heralded with the comment "//WAIT TO SHOW INDEX PAGE CONTENTS" */
   background-color: #d0d0d6;
   color: black; /* color of background as set at the top of this file*/
   border: none; /* reset border */
-  border-radius: 4px; 
+  border-radius: 4px;
   cursor: pointer;
   user-select: none;
   -webkit-appearance: none; /* disable default button styling on older Android */
   appearance: none;
 }
 
-/* Hover effect */
-.toggle-article-btn:hover {
+/* Hover effect 
+.toggle-article-btn:hover { */
   /*background-color: #b9b9c0;
-  /* background-color: #2c2c2e;  */ /* Slightly lighter on hover */
-}
+  /* background-color: #2c2c2e;  */ /* Slightly lighter on hover 
+} */
 
-/* Active / pressed effect */
-.toggle-article-btn:active {
+/* Active / pressed effect 
+.toggle-article-btn:active { */
   /*background-color: #a2a2ab;
-  /*background-color: #3a3a3c;     Even lighter on press */
-}
+  /*background-color: #3a3a3c;     Even lighter on press 
+}*/
 
 /* Focus / accessibility outline */
 .toggle-article-btn:focus {
   outline: 3px solid rgba(13, 110, 253, 1);
   outline-offset: 2px;
 }
-

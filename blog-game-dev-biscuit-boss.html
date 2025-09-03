@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html class="scrolly" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+
+    <site-assets></site-assets>
+
+    <script type="module" src="common.js"></script>
+
+    <link rel="stylesheet" href="custom.css" />
+
+    <title>Biscuit Boss</title>
+  </head>
+
+  <body>
+    <main class="container-lg" id="main-content" tabindex="-1">
+      <my-header></my-header>
+      <main id="main-content" role="main"></main>
+      <div class="container-fluid">
+        <div class="container-fluid">
+          <h1 class="text-center display-5 fw-bold">Biscuit Boss</h1>
+        </div>
+        <div class="container-fluid">
+          <img
+            class="img-fluid mx-auto d-block rounded"
+            src=""
+            alt="Gameplay cover animation for Biscuit Boss"
+          />
+
+          <div class="row d-flex justify-content-center mt-2">
+            <div class="col-12 col-md-3 col-lg-2 d-flex justify-content-center">
+              <a
+                href="https://robydev.itch.io/biscuit-boss"
+                aria-label="Play Biscuit Boss on itch.io"
+                rel="noopener noreferrer"
+                target="_blank"
+                class="btn btn-primary rounded-pill d-inline-flex justify-content-center align-items-center"
+              >
+                Play Game
+              </a>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="col-sm-12 col-md-8 col-lg-6 mx-auto">
+          <h2 class="display-6">Introduction</h2>
+
+          <p class="lh-lg">
+            This game is a vertical-scrolling 2D platformer with random level
+            generation and surreal comedy, designed for casual players in the
+            browser. Created for Brackeys Game Jam 2025.2 with the theme "RISK
+            IT for the BISCUIT." The jam lasted one week. I was the game
+            director and lead developer. I've teamed up with two programmers,
+            RobyDev from Spain and Shinespark from India; an artist, Francisco
+            Martins from Portugal; and a composer, Aylinel from Germany.
+          </p>
+          <br />
+          <h2 class="display-6">The Initial Idea</h2>
+          <p class="lh-lg">
+            I came up with the concept for this game while thinking about taking
+            risks for collectibles. The player starts at the bottom, climbs up
+            the platforms, collects biscuits, and comes back down before the
+            time ends. Will the player take a risk and go higher to collect more
+            biscuits or will they come back down? The random level generation is
+            meant to increase replayability value.
+          </p>
+          <br />
+          <h2 class="display-6">Early Prototyping</h2>
+          <p class="lh-lg">
+            We started prototyping in Unity. The first version of the level
+            generator spawned only one platform per row and there was a
+            possibility that a platform would spawn right above another platform
+            leading to the player character being unable to climb that platform.
+          </p>
+          <br />
+          <h2 class="display-6">Iteration and Problem Solving</h2>
+          <p class="lh-lg">
+            One of the biggest challenges was designing the level. I wanted the
+            player to have more than one way to go up. This meant there had to
+            be more than one platform per row. I also wanted to have an easy way
+            and a hard way. The easy way would have higher chances of spawning
+            biscuits and fewer chances of spawning enemies while the hard way
+            would have higher chances of spawning enemies and fewer chances of
+            spawning biscuits.
+          </p>
+          <p class="lh-lg">
+            One of the variations I tried had three platforms per row. This was
+            discarded as it was not leading to an interesting level design.
+            Another variation I tried had only two platforms per row and this
+            lead to an occasional problem where the space between the two
+            platforms would be too high and the player character would not be
+            able to jump from one platform to the other in the same row. I
+            solved this problem by measuring the distance between the two
+            platforms in a row and spawning a third platform in between them if
+            the space was too high. This lead to a balanced level design with
+            two platforms in some rows and three in some rows.
+          </p>
+          <p class="lh-lg">
+            To prevent only one side being easy and the other side hard, I wrote
+            the code in such a way that the game would randomly choose between
+            left and right side for the easy and hard platforms to be spawned.
+            In the early version, biscuits and enemies would spawn on every 5th
+            row. This was later changed to every 4th row and then to every 3rd
+            row. This decision was made so that climbing platforms would feel
+            more interesting with collectibles and enemies appearing more
+            frequently.
+          </p>
+          <p class="lh-lg">
+            The enemy drones are spawned on the right side of the screen and
+            moved to the left side. At times, the player character would be too
+            close to the drone when it was spawned and the player would not have
+            enough time to move away from the drone. To solve this problem, I
+            wrote the code in such a way that the drone would be spawned only
+            when the player character is in the center or left side of the
+            screen.
+          </p>
+          <br />
+          <h2 class="display-6">Art, Audio, and Narrative</h2>
+          <p class="lh-lg">
+            I wanted the art style to be painterly and the audio to feel like it
+            was made with real instruments. I asked the composer to create
+            gameplay background music that would feel similar to Super Mario
+            Bros and Double Dragon II themes. I wanted the narrative to feel
+            silly and surreal. So, we came up with the idea that an employee is
+            being ordered by their boss to carry out a strange task.
+          </p>
+
+          <br />
+          <p><a href="disclaimer.html">Disclaimer</a></p>
+        </div>
+      </div>
+    </main>
+
+    <footer-nav></footer-nav>
+  </body>
+</html>

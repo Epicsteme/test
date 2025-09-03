@@ -50,7 +50,7 @@
                   rel="noopener noreferrer"
                   class="btn btn-primary rounded-pill d-inline-flex justify-content-center align-items-center"
                 >
-                  Let's Play!
+                  Play Game!
                 </a>
               </div>
             </div>
@@ -60,7 +60,7 @@
 
           <div class="col-sm-12 col-md-8 col-lg-6 mx-auto">
             <h3 class="display-6">Introduction</h3>
-            <p>
+            <p class="lh-lg">
               It had been over a year since I worked on a game project. A 20
               Second Game Jam prompt was a good opportunity for me to refresh my
               memory of the process of game development. The focus of the jam
@@ -76,7 +76,7 @@
             <br>
 
             <h3 class="display-6">Theme</h3>
-            <p>
+            <p class="lh-lg">
               The jam offered a range of themes to choose from and they were all
               optional. I have leaned towards the theme "rocket" since, at the
               time, I was interested in the physics mechanics, inertia and
@@ -111,7 +111,7 @@
             <br>
 
             <h3 class="display-6">Title</h3>
-            <p>
+            <p class="lh-lg">
               This was initially going to be the third game in the Zodiac Ranger
               series, but I have chosen to keep this game as a stand-alone
               project for a few reasons including the following: all the games
@@ -126,7 +126,7 @@
             <br>
 
             <h3 class="display-6">Gameplay and Level Design</h3>
-            <p>
+            <p class="lh-lg">
               I wanted to make use of inertia as one of the core mechanics since
               I find a mix of control and randomness to be quite enjoyable at
               this time. I have decided that a fixed screen would be efficient
@@ -163,7 +163,7 @@
 
             <br>
 
-            <p>
+            <p class="lh-lg">
               I've set up a 2x4 grid where each "cell" contains a script for
               spawning tiles. Each spawner consists of nine slots (positions) in
               a 3x3 grid layout. A specific number of these slots would be
@@ -196,7 +196,7 @@
 
             <br>
 
-            <p>
+            <p class="lh-lg">
               Though I have started with the idea of gravity being enabled, I
               have decided to disable the gravity after a few playtests since it
               felt better to keep the ship moving without resistance. If gravity
@@ -209,7 +209,7 @@
             <br>
 
             <h3 class="display-6">Spawning the Level</h3>
-            <p>
+            <p class="lh-lg">
               I have made a list of slots (positions) from which one slot is
               randomly chosen by the spawner at the start of the level to spawn
               a rock in. From the remaining slots, 2 slots will be randomly
@@ -224,7 +224,7 @@
             <br>
 
             <h3 class="display-6">Art</h3>
-            <p>
+            <p class="lh-lg">
               I was focussing on refreshing my memory more than I was trying to
               make a polished game at the beginning of the project. Some of the
               earlier assets used involved Kenney's sprites as well as my own.
@@ -260,7 +260,7 @@
 
             <br>
 
-            <p>
+            <p class="lh-lg">
               I've made a few prototypes for the timer UI. An oxygen tank seemed
               to be a decent idea that fit well with the premise of the game.
               Once I had a stable foundation for the game and realised that I
@@ -289,7 +289,7 @@
 
             <br>
 
-            <p>
+            <p class="lh-lg">
               The artist made a few rough sketches of the assets and a variety
               of options to choose from. I have chosen this model of the ship
               since I felt that its silhouette was visually way more attractive
@@ -338,7 +338,7 @@
 
             <br>
 
-            <p>
+            <p class="lh-lg">
               The colours of the rocks make them fit in with the environment but
               also stand out just enough for the players to easily spot them.
               There are two different rock sprites and the script randomly
@@ -361,7 +361,7 @@
             <br>
 
             <h3 class="display-6">Music</h3>
-            <p>
+            <p class="lh-lg">
               I have teamed up with a music composer,
               <a href="https://soundcloud.com/clairebun">Claire</a>, from the
               jam's Discord server. They were able to understand the needs and
@@ -395,7 +395,7 @@
 
             <br>
 
-            <p>
+            <p class="lh-lg">
               I've written a script that changes the pitch of the engine sound
               within a fixed range depending on the ship's speed in order to
               reduce monotony and to make it feel like the engine is behaving as
@@ -413,7 +413,7 @@
             <br>
 
             <h3 class="display-6">Juice</h3>
-            <p>
+            <p class="lh-lg">
               To make the game feel alive, I've added visual juice and subtle
               details. There would be shooting stars in the background that fly
               across the screen every few seconds.
@@ -430,7 +430,7 @@
 
             <br>
 
-            <p>
+            <p class="lh-lg">
               Instead of spawning new shooting stars each time, I had only three
               game objects which return to the starting position on the x axis.
               After travelling a certain distance within a fixed range, the
@@ -470,7 +470,7 @@
 
               <br>
 
-              <p>
+              <p class="lh-lg">
                 The rocks and the astronauts carry scripts that make them spin
                 clockwise or counter clockwise. I have also added two different
                 speeds for each direction in order to add variety and make them
@@ -512,7 +512,7 @@
 
             <br>
 
-            <p>
+            <p class="lh-lg">
               Asset reuse is crucial to save time and energy. This above asset
               was used (without the faded text) as the filler for the oxygen
               tank, background for the buttons in menu screens, and a few other
@@ -531,7 +531,7 @@
 
             <br>
 
-            <p>
+            <p class="lh-lg">
               I've written a script that chose a random colour for the heart
               each time an NPC was rescued. Though this felt refreshing and
               exciting, it strayed from the rest of the art style. For the sake
@@ -551,7 +551,7 @@
 
             <br>
 
-            <p>
+            <p class="lh-lg">
               The circular masking helps in making the scene transition look
               less boring while also serving the function of getting the
               players' attention towards the ship at the start of the level.
@@ -569,7 +569,7 @@
 
             <br>
 
-            <p>
+            <p class="lh-lg">
               The camera shake is an obvious element at this point in my game
               dev journey. The shake upon explosion increases the intensity of
               the collision and also the players' immersion in the game.
@@ -578,7 +578,7 @@
             <br>
 
             <h3 class="display-6">Accessibility</h3>
-            <p>
+            <p class="lh-lg">
               Royalty free font "OpenDyslexic" was used in order to provide a
               relatively better experience to players with dyslexia.
             </p>
@@ -586,7 +586,7 @@
             <br>
 
             <h3 class="display-6">Bugs</h3>
-            <p>
+            <p class="lh-lg">
               The first bug I had come across was a music track playing in only
               one ear. However, the other sound effects were playing in both the
               ears. I fixed this by resetting the parameters of the audio source
@@ -615,7 +615,7 @@
             <br>
 
             <h3 class="display-6">Playtest and Feedback</h3>
-            <p>
+            <p class="lh-lg">
               Information is key to the player and when the player fails at
               something in the game, it should not be due to the reason that the
               game did not give them adequate information.
@@ -633,7 +633,7 @@
 
             <br>
 
-            <p>
+            <p class="lh-lg">
               I was originally going to set the screen boundaries to be lethal
               but chose to leave a few pixels of safe space beyond the edges so
               that if players accidentally got too close, they would still have

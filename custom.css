@@ -241,7 +241,7 @@ it is heralded with the comment "//WAIT TO SHOW INDEX PAGE CONTENTS" */
   opacity: 1;
 }
 
-/*TOGGLE SHOW HIDE BLOG SECTION TITLE BUTTONS*/
+/*-----TOGGLE SHOW HIDE BLOG SECTION TITLE BUTTONS-----*/
 /* Make toggle buttons look like real buttons */
 #blog-sections .toggle-section-btn {
   /*all: unset;*/
@@ -269,13 +269,13 @@ it is heralded with the comment "//WAIT TO SHOW INDEX PAGE CONTENTS" */
 
 /* Hover effect */
 #blog-sections .toggle-section-btn:hover {
-  background-color: #0a58ca;
+  /*background-color: #0a58ca;
   /* background-color: #2c2c2e;  */ /* Slightly lighter on hover */
 }
 
 /* Active / pressed effect */
 #blog-sections .toggle-section-btn:active {
-  background-color: #004080;
+  /*background-color: #004080;
   /*background-color: #3a3a3c;     Even lighter on press */
 }
 
@@ -291,7 +291,7 @@ it is heralded with the comment "//WAIT TO SHOW INDEX PAGE CONTENTS" */
 }
 
 
-/*TOGGLE SHOW HIDE LITERATURE SECTION TITLE BUTTONS*/
+/*-----TOGGLE SHOW HIDE LITERATURE SECTION TITLE BUTTONS-----*/
 /* Make toggle buttons look like real buttons */
 #literature-sections .toggle-section-btn {
   /*all: unset;*/
@@ -341,7 +341,7 @@ it is heralded with the comment "//WAIT TO SHOW INDEX PAGE CONTENTS" */
 }
 
 
-/*TOGGLE SHOW HIDE LITERATURE ARTICLES BUTTONS*/
+/*-----TOGGLE SHOW HIDE LITERATURE ARTICLES BUTTONS-----*/
 /* Make toggle buttons look like real buttons */
 .toggle-article-btn {
   /*all: unset;*/
@@ -365,13 +365,13 @@ it is heralded with the comment "//WAIT TO SHOW INDEX PAGE CONTENTS" */
 
 /* Hover effect */
 .toggle-article-btn:hover {
-  background-color: #b9b9c0;
+  /*background-color: #b9b9c0;
   /* background-color: #2c2c2e;  */ /* Slightly lighter on hover */
 }
 
 /* Active / pressed effect */
 .toggle-article-btn:active {
-  background-color: #a2a2ab;
+  /*background-color: #a2a2ab;
   /*background-color: #3a3a3c;     Even lighter on press */
 }
 

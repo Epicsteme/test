@@ -303,7 +303,7 @@ section[data-collapsed="true"] .articles {
   padding: 4px 8px; /*0.2em 0.2em; */ /* increase touch area */
   font-weight: 700;
   /*background-color: #1d1d1f; */
-  background-color: #0d6efd;
+  background-color: #6ea8fe;
   color: rgb(
     245,
     245,
@@ -319,13 +319,13 @@ section[data-collapsed="true"] .articles {
 
 /* Hover effect */
 .toggle-article-btn:hover {
-  background-color: #0a58ca;
+  background-color: #3d8bfd;
   /* background-color: #2c2c2e;  */ /* Slightly lighter on hover */
 }
 
 /* Active / pressed effect */
 .toggle-article-btn:active {
-  background-color: #004080;
+  background-color: #0d6efd;
   /*background-color: #3a3a3c;     Even lighter on press */
 }
 

@@ -60,7 +60,7 @@
             Martins from Portugal; and a composer, Aylinel from Germany.
           </p>
           <br />
-          <h2 class="display-6">The Initial Idea</h2>
+          <h2 class="display-6">The Core Idea</h2>
           <p class="lh-lg">
             I came up with the concept for this game while thinking about taking
             risks for collectibles. The player starts at the bottom, climbs up
@@ -73,9 +73,47 @@
           <h2 class="display-6">Early Prototyping</h2>
           <p class="lh-lg">
             We started prototyping in Unity. The first version of the level
-            generator spawned only one platform per row and there was a
-            possibility that a platform would spawn right above another platform
-            leading to the player character being unable to climb that platform.
+            generator spawned only one platform per row. At the time, there was
+            a possibility that a platform would be spawned right above another
+            platform, leading to the player character being unable to climb. I
+            resolved this issue through code.
+          </p>
+          <br />
+          <h2 class="display-6">Scope and Prioritization</h2>
+          <p class="lh-lg">
+            We initially considered adding wall jumps, but I discarded the idea
+            because our level generation system wasn't ready to reliably produce
+            walls, and adding the mechanic would have pushed the scope beyond
+            what was feasible in our jam timeframe.
+          </p>
+          <p class="lh-lg">
+            The early version of level generation included platforms of various
+            sizes. I standardized all platforms to a single size. This reduced
+            technical complexity, kept scope realistic, and ensured we could
+            meet the jam deadline.
+          </p>
+          <p class="lh-lg">
+            I initially considered five enemy types but chose to implement only
+            two to keep scope manageable and ensure we met the jam deadline.
+          </p>
+          <br />
+          <h2 class="display-6">Team Coordination</h2>
+          <p class="lh-lg">
+            We used Github for collaborative development and Google Sheets to
+            communicate which tasks needed to be done and in which order.
+          </p>
+          <p class="lh-lg">
+            I implemented player movement, the majority of level generation,
+            enemy behaviors, and a few minor elements. Shinespark implemented
+            the leaderboard system. RobyDev handled the rest.
+          </p>
+          <p class="lh-lg">
+            The art style was established before the game concept was finalized.
+            Once we had a working level generation system, I was able to
+            evaluate the gameplay pacing and guide the composer on the type of
+            background music needed. This approach ensured that both the artist
+            and composer had sufficient time to create and polish the necessary
+            assets.
           </p>
           <br />
           <h2 class="display-6">Iteration and Problem Solving</h2>
@@ -105,10 +143,9 @@
             the code in such a way that the game would randomly choose between
             left and right side for the easy and hard platforms to be spawned.
             In the early version, biscuits and enemies would spawn on every 5th
-            row. This was later changed to every 4th row and then to every 3rd
-            row. This decision was made so that climbing platforms would feel
-            more interesting with collectibles and enemies appearing more
-            frequently.
+            row. This was later changed to every 3rd row. This decision was made
+            so that climbing platforms would feel more interesting with
+            collectibles and enemies appearing more frequently.
           </p>
           <p class="lh-lg">
             The enemy drones are spawned on the right side of the screen and
@@ -118,6 +155,17 @@
             wrote the code in such a way that the drone would be spawned only
             when the player character is in the center or left side of the
             screen.
+          </p>
+          <p class="lh-lg">
+            I wanted the round to end when the player reached the boss after
+            collecting at least one biscuit. At the same time, falling from a
+            height should result in the player's death. We realized this could
+            create a conflict: if the player fell near the boss, it might
+            trigger unintended behavior or bugs. To solve this, I added a
+            platform above the boss, ensuring the player couldn't fall in that
+            critical area and maintaining the intended game flow. This decision
+            allowed me to enforce clear rules while keeping the gameplay
+            predictable and bug-free.
           </p>
           <br />
           <h2 class="display-6">Art, Audio, and Narrative</h2>
@@ -129,8 +177,13 @@
             silly and surreal. So, we came up with the idea that an employee is
             being ordered by their boss to carry out a strange task.
           </p>
-
           <br />
+          <p class="text-muted" aria-label="Date published">
+            Published on
+            <time datetime="2025-09-03" aria-label="3 September 2025"
+              >4 September 2025</time
+            >
+          </p>
           <p><a href="disclaimer.html">Disclaimer</a></p>
         </div>
       </div>

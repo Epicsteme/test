@@ -58,7 +58,7 @@ class FooterNav extends HTMLElement {
 <footer class="container-lg text-center mb-3" aria-label="Footer navigation">
     <hr class="container-lg">
     <nav aria-label="Footer site links">
-        <ul class="list-inline mb-0" role="menubar">
+        <ul class="list-inline mb-2" role="menubar">
             <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="./" role="menuitem">Home</a></li>
             <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="blog.html" role="menuitem">Blog</a></li>
             <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="literature.html" role="menuitem">Literature</a></li>
@@ -66,6 +66,8 @@ class FooterNav extends HTMLElement {
             <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="https://pikonparadox.itch.io/" target="_blank" rel="noopener noreferrer" role="menuitem">Games</a></li>
             <li class="list-inline-item hover-underline" role="link"><a class="text-black" href="about.html" role="menuitem">About</a></li>
         </ul>
+        
+        <p class="text-muted">Website designed by Aditya</P>
     </nav>
 </footer>
         `;

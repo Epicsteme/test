@@ -172,9 +172,9 @@ window.addEventListener("load", () => {
 // List of titles to cycle through
 const hometitles = [
   "Artist",
+  "Writer",
   "Educator",
-  "Amateur Writer",
-  "Amateur Philosopher",
+  "Philosopher",
   "Indie Game Developer",
 ];
 

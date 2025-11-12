@@ -1,2 +1,3 @@
-# epicsteme.github.io
+# beyondoxa.github.io
 Personal website (for personal use)
+
